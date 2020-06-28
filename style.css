@@ -108,13 +108,17 @@ body {
   background-color: #f9f9f9;
   min-width: 1000px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 5px;
+  padding: 10px;
   z-index: 1;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.dropdown-content ul li {
+  list-style-type: disc;
 }
 
 .dropdown:hover .dropdown-content {
@@ -142,4 +146,10 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+
+
+ul li .square {
+  list-style-type: square;
 }
