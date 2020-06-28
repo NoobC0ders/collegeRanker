@@ -112,12 +112,34 @@ body {
   z-index: 1;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
-  height: 500px;
+  height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
-  align-items: center;
+  display: flex;
+}
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
