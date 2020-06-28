@@ -118,7 +118,7 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
-  display: flex;
+  display: block;
 }
 
 /* Scroll bar */
