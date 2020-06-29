@@ -1,180 +1,298 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-  width: 100vw;
+  padding: 0;
+  margin: 0;
   overflow-x: hidden;
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 1;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-
-.carousel-item>img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-}
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.marketing h2 {
-  font-weight: 400;
-}
-
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0;
-  /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0;
+  width: 100%;
   position: fixed;
-  background-color: #f9f9f9;
-  top: 10vh;
-  height: auto;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
-  right: 0;
-  z-index: 2;
-  /* width: 100vw;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 10px 10px 20px 10px;
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  min-height: 100%;
-  height: auto;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
 
-  transition: 1000ms ease-in-out; */
-  /* overflow-x: hidden; */
-  /* display: none;
-  border: 1px solid; */
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+  background-color: #F4F4F4;
+  overflow: hidden;
+  color: black;
+  padding-left: 5em;
+
+
 
 }
 
-.closeDropDown {
-  font-size: 32px;
-  cursor: pointer;
+.topnav .logo {
+  float: left;
+  padding: 10px;
+  margin-right: 15px;
+  margin-left: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+
 }
 
-.dropdown-content div {
-  /* position: absolute; */
-  width: auto;
-  height: auto;
-  overflow-y: scroll;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: inherit;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
-.dropdown-content ul li {
-  list-style-type: disc;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  height: 100%;
+
 }
 
-.dropdown:hover .dropdown-content {
-  top: 10vh;
-  transition: 1000ms ease-in-out;
+/* Add an active class to highlight the current page */
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
 
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 750px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
 
-/* Scroll bar */
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-  background: none;
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 750px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav .signBtn {
+
+    position: absolute;
+    right: 40px;
+    top: 0;
+  }
+
+
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
+.topnav .logo {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.topnav .signBtn {
+  float: right;
+  display: block;
+  margin: 10px 20px;
+  background-color: #48FA9A;
+  text-align: center;
+  justify-self: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   border-radius: 20px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  /* border: 1px solid; */
+
 }
 
+.heroSection .headline {
+  position: absolute;
+  width: 454px;
+  height: 140px;
+  left: 100px;
+  top: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
 
+  color: #353535;
+}
 
-ul li .square {
-  list-style-type: square;
+.heroSection .headline2 {
+  position: absolute;
+  width: 396px;
+  height: 41px;
+  left: 100px;
+  top: 260px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 41px;
+  color: #353535;
+
+}
+
+.heroSection p {
+  position: absolute;
+  width: 574px;
+  height: 143px;
+  left: 100px;
+  top: 320px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #353535;
+}
+
+.heroSection .svgImg {
+  position: absolute;
+  width: 453.33px;
+  height: 428px;
+  right: 100px;
+  top: 80px;
+}
+
+.heroSection .inputEmail {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  left: 100px;
+  top: 509px;
+  /* background: #FFFFFF; */
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+  /* border-radius: 66px; */
+
+}
+
+.heroSection input[type=text] {
+  outline: none;
+  border-radius: 66px;
+  padding: 15px 20px;
+  border: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.heroSection .submitBtn {
+  border: none;
+  position: absolute;
+  left: 430px;
+  top: 570px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  background-color: #48FA9A;
+  outline: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 16ppx;
+  cursor: pointer;
+}
+
+.heroSection .submitBtn:hover {
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out;
 }

@@ -1,18 +1,18 @@
-const dropDown = document.querySelector('.dropdown');
-const dropDownContent = document.querySelector('.dropdown-content');
-
-
-dropDown.addEventListener('click', function () {
-    // dropDownContent.style.top = '8vh';
-    if (dropDownContent.style.display === 'block') {
-        dropDownContent.style.display = 'none';
-        return;
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
     }
-    dropDownContent.style.display = 'block';
+}
 
-});
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
 
-function closeDropDown() {
-    dropDownContent.style.display = 'none';
-
-};
+/* Close */
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
