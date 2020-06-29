@@ -8,6 +8,8 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 
@@ -22,7 +24,7 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
-  z-index: 10;
+  z-index: 1;
 }
 
 /* Declare heights because of positioning of img element */
@@ -103,18 +105,39 @@ body {
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
+
+  position: fixed;
   background-color: #f9f9f9;
-  min-width: 1000px;
+  top: 10vh;
+  height: auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  /* width: 100vw;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  z-index: 1;
+  padding: 10px 10px 20px 10px;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
-  height: 100vh;
+  min-height: 100%;
+  height: auto;
+
+  transition: 1000ms ease-in-out; */
+  /* overflow-x: hidden; */
+  /* display: none;
+  border: 1px solid; */
+
+}
+
+.closeDropDown {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.dropdown-content div {
+  /* position: absolute; */
+  width: auto;
+  height: auto;
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .dropdown-content ul li {
@@ -122,8 +145,10 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
-  display: flex;
+  top: 10vh;
+  transition: 1000ms ease-in-out;
 }
+
 
 /* Scroll bar */
 /* width */
