@@ -184,7 +184,7 @@ body {
 .topnav .signBtn {
     float: right;
     display: block;
-    margin: 10px 20px;
+    margin: 10px 80px 10px 50px;
     background-color: #48FA9A;
     text-align: center;
     justify-self: center;
