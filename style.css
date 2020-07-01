@@ -256,6 +256,7 @@ body {
   top: 80px;
 }
 
+<<<<<<< HEAD
 .heroSection .inputEmail {
   position: absolute;
   width: 400px;
@@ -272,6 +273,16 @@ body {
   padding: 15px 20px;
   border: none;
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+=======
+.topnav .logo {
+    float: left;
+    padding: 10px;
+    margin-right: 15px;
+    margin-left: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #353535
+>>>>>>> 8b37dcaf798adca2d30c6c04f1edcf2a545ffc52
 }
 
 .heroSection input[type="text"]:focus {
@@ -355,6 +366,7 @@ body {
   color: rgba(53, 53, 53, 0.04);
 }
 
+<<<<<<< HEAD
 .aboutSection p {
   position: relative;
   top: 150px;
@@ -365,6 +377,22 @@ body {
   line-height: 29px;
   text-align: center;
   color: #000000;
+=======
+.topnav .signBtn {
+    float: right;
+    display: block;
+    margin: 10px 20px;
+    background-color: #48FA9A;
+    text-align: center;
+    justify-self: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+>>>>>>> 8b37dcaf798adca2d30c6c04f1edcf2a545ffc52
 }
 
 .aboutSection .rect3 {
