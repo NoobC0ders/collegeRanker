@@ -1,298 +1,471 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,500&display=swap");
 
 body {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/**************************************************************************************************************************/
+/* Add a black background color to the top navigation */
+
+.topnav {
+  background-color: #f4f4f4;
+  overflow: hidden;
+  color: black;
+  padding-left: 5em;
+}
+
+.topnav .logo {
+  float: left;
+  padding: 10px;
+  margin-right: 15px;
+  margin-left: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: inherit;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  height: 100%;
+}
+
+/* Add an active class to highlight the current page */
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 950px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 950px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav .signBtn {
+    position: absolute;
+    right: 40px;
+    top: 0;
+  }
+}
+
+.topnav .logo {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.topnav .signBtn {
+  float: right;
+  display: block;
+  margin: 10px 20px 10px 50px;
+  background-color: #48fa9a;
+  text-align: center;
+  justify-self: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+  transition: 0.5s ease-in-out;
+}
+
+.topnav .signBtn:hover {
+  background-color: #3ad884;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.35);
+  transition: 0.5s ease-in-out;
+}
+
+.topnav .signBtn:focus {
+  background-color: #3ad884;
 }
 
 /* The Overlay (background) */
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 0;
-    width: 100%;
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0, 0, 0);
-    /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/opacity */
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
-    position: relative;
-    top: 25%;
-    /* 25% from the top */
-    width: 100%;
-    /* 100% width */
-    text-align: center;
-    /* Centered text/links */
-    margin-top: 30px;
-    /* 30px top margin to avoid conflict with the close button on smaller screens */
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    /* Display block instead of inline */
-    transition: 0.3s;
-    /* Transition effects on hover (color) */
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
 }
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover,
 .overlay a:focus {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
+  .overlay a {
+    font-size: 20px;
+  }
 
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
-
-/* Add a black background color to the top navigation */
-
-.topnav {
-    background-color: #F4F4F4;
-    overflow: hidden;
-    color: black;
-    padding-left: 5em;
-
-
-
-}
-
-.topnav .logo {
-    float: left;
-    padding: 10px;
-    margin-right: 15px;
-    margin-left: 2em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: inherit;
-    text-align: center;
-    justify-self: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-    height: 100%;
-
-}
-
-/* Add an active class to highlight the current page */
-
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 750px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 750px) {
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .topnav .signBtn {
-
-        position: absolute;
-        right: 40px;
-        top: 0;
-    }
-
-
-}
-
-.topnav .logo {
-    font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 10px;
-    font-weight: bolder;
-}
-
-.topnav .signBtn {
-    float: right;
-    display: block;
-    margin: 10px 80px 10px 50px;
-    background-color: #48FA9A;
-    text-align: center;
-    justify-self: center;
-    padding: 10px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    border-radius: 20px;
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 .heroSection {
-    position: relative;
-    width: 100%;
-    height: 660px;
-    /* border: 1px solid; */
-
+  position: relative;
+  width: 100%;
+  height: 660px;
+  /* border: 1px solid; */
 }
 
 .heroSection .headline {
-    position: absolute;
-    width: 454px;
-    height: 140px;
-    left: 100px;
-    top: 100px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 70px;
+  position: absolute;
+  width: 454px;
+  height: 140px;
+  left: 100px;
+  top: 100px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
 
-    color: #353535;
+  color: #353535;
 }
 
 .heroSection .headline2 {
-    position: absolute;
-    width: 396px;
-    height: 41px;
-    left: 100px;
-    top: 260px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 35px;
-    line-height: 41px;
-    color: #353535;
-
+  position: absolute;
+  width: 396px;
+  height: 41px;
+  left: 100px;
+  top: 260px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 41px;
+  color: #353535;
 }
 
 .heroSection p {
-    position: absolute;
-    width: 574px;
-    height: 143px;
-    left: 100px;
-    top: 320px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 23px;
-    color: #353535;
+  position: absolute;
+  width: 574px;
+  height: 143px;
+  left: 100px;
+  top: 320px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #353535;
 }
 
 .heroSection .svgImg {
-    position: absolute;
-    width: 453.33px;
-    height: 428px;
-    right: 100px;
-    top: 80px;
+  position: absolute;
+  width: 453.33px;
+  height: 428px;
+  right: 100px;
+  top: 80px;
 }
 
 .heroSection .inputEmail {
-    position: absolute;
-    width: 400px;
-    height: auto;
-    left: 100px;
-    top: 509px;
-    /* background: #FFFFFF; */
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
-    /* border-radius: 66px; */
-
+  position: absolute;
+  width: 400px;
+  height: auto;
+  left: 100px;
+  top: 509px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
 }
 
-.heroSection input[type=text] {
-    outline: none;
-    border-radius: 66px;
-    padding: 15px 20px;
-    border: none;
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+.heroSection input[type="text"] {
+  outline: none;
+  border-radius: 66px;
+  padding: 15px 20px;
+  border: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.heroSection input[type="text"]:focus {
+  background-color: #f5f5f5;
+  transition: 0.5s ease-in-out;
+  border-bottom: 2px solid #48fa9a;
+}
+
+.heroSection .inputEmail:hover {
+  background-color: #f8f7f7;
+  transition: 0.5s ease-in-out;
 }
 
 .heroSection .submitBtn {
-    border: none;
-    position: absolute;
-    left: 430px;
-    top: 570px;
-    padding: 12px 30px;
-    border-radius: 50px;
-    background-color: #48FA9A;
-    outline: none;
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 16ppx;
-    cursor: pointer;
+  border: none;
+  position: absolute;
+  left: 430px;
+  top: 570px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  background-color: #48fa9a;
+  outline: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .heroSection .submitBtn:hover {
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
-    transition: 0.5s ease-in-out;
+  background-color: #3ad884;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1280px) {
+  .heroSection .svgImg {
+    transform: scale(0.7);
+    position: absolute;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .heroSection .svgImg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .heroSection .headline {
+    position: relative;
+  }
+
+  .heroSection .svgImg {
+    display: none;
+  }
+}
+
+.aboutSection {
+  position: relative;
+  width: 100%;
+  height: 952.08px;
+
+  /* background-image: url("./Decoration.svg"); */
+  /* background-size: cover; */
+}
+
+.aboutSection .aboutWatermark {
+  position: absolute;
+  width: 822px;
+  height: 234px;
+  left: 0px;
+  top: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 234px;
+  text-align: right;
+  color: rgba(53, 53, 53, 0.04);
+}
+
+.aboutSection p {
+  position: relative;
+  top: 150px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+.aboutSection .rect3 {
+  position: absolute;
+  left: -10px;
+  top: 500px;
+}
+
+.aboutSection .rect4 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: -20px;
+  top: 0px;
+}
+
+.aboutSection .ell1 {
+  position: absolute;
+  left: 56px;
+  top: 410px;
+}
+
+.aboutSection .poly {
+  position: absolute;
+  right: -10px;
+  top: 500px;
+}
+
+.aboutSection .ourTeam {
+  position: relative;
+  top: 150px;
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.ourTeam .card {
+  position: relative;
+  width: 120px;
+  height: 160px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ourTeam .name,
+.position {
+  position: relative;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+  .aboutSection .aboutWatermark {
+    position: absolute;
+    width: auto;
+    height: 234px;
+    left: 10px;
+    top: 20px;
+    font-size: 100px;
+  }
+
+  .aboutSection .ell1 {
+    display: none;
+  }
+  .aboutSection .poly {
+    display: none;
+  }
+  .aboutSection .rect4 {
+    display: none;
+  }
+  .aboutSection .rect3 {
+    display: none;
+  }
+
+  .aboutSection p {
+    font-size: 18px;
+    padding: 0px 20px;
+  }
+
+  .aboutSection .ourTeam {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .ourTeam .card {
+    position: relative;
+    width: 160px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+  }
+
+  .ourTeam .name,
+  .position {
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
 }
