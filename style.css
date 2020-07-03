@@ -478,7 +478,7 @@ body {
 
 /**************** media query for android 360 X 640 (min:320 max:390) ******************/
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 420px) {
 
   .topnav .logo {
     width: 49px;
