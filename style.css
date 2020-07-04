@@ -334,10 +334,8 @@ body {
 .aboutSection {
   position: relative;
   width: 100%;
-  height: 952.08px;
-
-  /* background-image: url("./Decoration.svg"); */
-  /* background-size: cover; */
+  height: 760px;
+  /* border: 1px solid #000; */
 }
 
 .aboutSection .aboutWatermark {
@@ -346,7 +344,7 @@ body {
   height: 234px;
   left: 0px;
   top: 0px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 200px;
@@ -398,10 +396,27 @@ body {
   top: 150px;
   width: 100%;
   height: 200px;
+  /* margin-top: 20px; */
+  text-align: center;
+}
+
+.ourTeam .heading {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #353535;
+}
+.ourTeam .content {
+  position: relative;
+  width: 100%;
+  height: 200px;
   margin-top: 20px;
   display: flex;
   justify-content: center;
-
 }
 
 .ourTeam .card {
@@ -410,7 +425,13 @@ body {
   height: 160px;
   padding: 10px;
   margin: 10px;
+}
 
+.ourTeam img {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .ourTeam img,
@@ -420,6 +441,7 @@ body {
   width: 100%;
   float: left;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (max-width: 950px) {
@@ -456,6 +478,14 @@ body {
   .aboutSection .ourTeam {
     display: block;
     margin-left: 20px;
+    text-align: center;
+    /* border: 1px solid #000; */
+  }
+
+  .ourTeam .heading {
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid #000; */
   }
 
   .ourTeam .card {
@@ -465,6 +495,7 @@ body {
     padding: 10px;
     margin: 10px;
     float: left;
+    font-family: "Roboto", sans-serif;
   }
 
   .ourTeam .name,
@@ -473,22 +504,21 @@ body {
     width: 100%;
     float: left;
     text-align: center;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
   }
 }
 
 /**************** media query for android 360 X 640 (min:320 max:390) ******************/
 
 @media screen and (max-width: 420px) {
-
   .topnav .logo {
     width: 49px;
     height: 35px;
     left: 4px;
     font-size: 30px;
-
-
+    margin-left: 20px;
   }
-
 
   .topnav .signBtn {
     margin: 10px 30px 10px 50px;
@@ -506,12 +536,12 @@ body {
     position: absolute;
     width: 303px;
     height: 94px;
-    left: 14px;
+    left: 30px;
     top: 50px;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 47px;
   }
 
@@ -519,23 +549,22 @@ body {
     position: absolute;
     width: 283px;
     height: 29px;
-    left: 14px;
+    left: 30px;
     top: 160px;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 29px;
-
   }
 
   .heroSection p {
     position: absolute;
     width: 300px;
     height: auto;
-    left: 14px;
+    left: 30px;
     top: 200px;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -548,13 +577,13 @@ body {
     position: absolute;
     width: 240px;
     height: 10px;
-    left: 14px;
+    left: 30px;
     top: 380px;
   }
 
   .heroSection .submitBtn {
     position: absolute;
-    left: 20px;
+    left: 30px;
     top: 440px;
     text-align: center;
     padding: 8px 16px;
@@ -562,38 +591,47 @@ body {
 
   .aboutSection .aboutWatermark {
     position: absolute;
-    width: 300px;
-    height: 82px;
-    left: 20;
-    top: 0px;
-    font-family: Roboto;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+    /* border: 1px solid; */
+    font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    text-align: left;
-    color: rgba(53, 53, 53, 0.04);
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 90px;
+    color: rgba(53, 53, 53, 0.096);
   }
 
+  .ourTeam .heading {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+  }
 
-  .aboutSection .ourTeam {
+  .ourTeam .content {
     position: relative;
     width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    display: block;
     margin: 0;
     padding: 0;
-
+    /* border: 1px solid #000; */
   }
 
   .ourTeam .card {
     position: relative;
     width: 120px;
     height: 160px;
-
   }
-
 
   .ourTeam img,
   .name,
@@ -602,6 +640,162 @@ body {
     width: 100%;
     text-align: center;
   }
+}
 
+/*************** Service Section *************************/
+.serviceSection {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  /* border: 1px solid #000; */
+  padding-top: 20px;
+}
 
+.serviceSection .heading {
+  width: 100%;
+  height: 59px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #353535;
+}
+
+.serviceSection .serviceWatermark {
+  position: absolute;
+  width: 766px;
+  height: 234px;
+  right: 5rem;
+  top: 10rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 234px;
+  text-align: right;
+  color: rgba(53, 53, 53, 0.04);
+}
+
+.serviceSection img {
+  position: absolute;
+  left: 3em;
+  top: 10em;
+}
+
+.serviceSection .content {
+  position: absolute;
+  width: 747px;
+  height: 210px;
+  right: 4em;
+  top: 16rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: right;
+  color: #000000;
+}
+
+.serviceSection b {
+  font-weight: 500;
+}
+
+.growthSection {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  /* border: 1px solid #000; */
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.growthSection .growthWatermark {
+  position: absolute;
+  width: 644px;
+  height: 234px;
+  left: 3rem;
+  top: 5rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 234px;
+
+  color: rgba(53, 53, 53, 0.04);
+}
+
+.growthSection .content {
+  position: absolute;
+  width: 728px;
+  height: 280px;
+  left: 3rem;
+  top: 12rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+.growthSection b {
+  font-weight: 500;
+}
+
+.growthSection img {
+  position: absolute;
+  width: 657px;
+  height: 500px;
+  right: 2rem;
+  top: 0em;
+}
+
+.profitSection {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  /* border: 1px solid #000; */
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.profitSection .profitWatermark {
+  position: absolute;
+  width: 766px;
+  height: 234px;
+  right: 5rem;
+  top: 5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 234px;
+  text-align: right;
+  color: rgba(53, 53, 53, 0.04);
+}
+
+.profitSection .content {
+  position: absolute;
+  width: 728px;
+  height: 280px;
+  right: 5rem;
+  top: 12rem;
+  text-align: right;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.profitSection img {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.profitSection b {
+  font-weight: 500;
 }
