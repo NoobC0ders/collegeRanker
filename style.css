@@ -250,10 +250,11 @@ body {
 
 .heroSection .svgImg {
   position: absolute;
-  width: 453.33px;
-  height: 428px;
+  width: 35em;
+  height: 25em;
   right: 100px;
   top: 80px;
+  /* border: 1px solid #000; */
 }
 
 .heroSection .inputEmail {
@@ -342,7 +343,7 @@ body {
   position: absolute;
   width: 822px;
   height: 234px;
-  left: 0px;
+  left: 100px;
   top: 0px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -410,6 +411,7 @@ body {
   text-align: center;
   color: #353535;
 }
+
 .ourTeam .content {
   position: relative;
   width: 100%;
@@ -667,7 +669,7 @@ body {
   position: absolute;
   width: 766px;
   height: 234px;
-  right: 5rem;
+  right: 100px;
   top: 10rem;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -680,7 +682,7 @@ body {
 
 .serviceSection img {
   position: absolute;
-  left: 3em;
+  left: 100px;
   top: 10em;
 }
 
@@ -690,7 +692,7 @@ body {
   height: 210px;
   right: 4em;
   top: 16rem;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -716,9 +718,9 @@ body {
   position: absolute;
   width: 644px;
   height: 234px;
-  left: 3rem;
+  left: 100px;
   top: 5rem;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 200px;
@@ -731,15 +733,16 @@ body {
   position: absolute;
   width: 728px;
   height: 280px;
-  left: 3rem;
+  left: 100px;
   top: 12rem;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
   line-height: 35px;
   color: #000000;
 }
+
 .growthSection b {
   font-weight: 500;
 }
@@ -748,8 +751,10 @@ body {
   position: absolute;
   width: 657px;
   height: 500px;
-  right: 2rem;
+  right: 50px;
   top: 0em;
+  /* border: 1px solid #000; */
+
 }
 
 .profitSection {
@@ -765,7 +770,7 @@ body {
   position: absolute;
   width: 766px;
   height: 234px;
-  right: 5rem;
+  right: 100px;
   top: 5rem;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -780,10 +785,10 @@ body {
   position: absolute;
   width: 728px;
   height: 280px;
-  right: 5rem;
+  right: 100px;
   top: 12rem;
   text-align: right;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -792,10 +797,345 @@ body {
 }
 
 .profitSection img {
-  margin-left: 2rem;
+  margin-left: 100px;
   margin-top: 2rem;
 }
 
 .profitSection b {
   font-weight: 500;
+}
+
+
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  height: 795px;
+  left: 0px;
+  /* border: 1px solid #000; */
+  background-image: url('./assets/images/bg/Backdrop.svg');
+  background-repeat: no-repeat;
+  /* background-size: 160% 100%; */
+
+}
+
+
+.testimonial .watermark {
+  position: relative;
+  width: 100%;
+  height: 234px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 234px;
+  text-align: center;
+  color: rgba(53, 53, 53, 0.05);
+}
+
+.testimonial .headline {
+  position: absolute;
+  width: 393px;
+  height: 352px;
+  font-family: "Roboto", sans-serif;
+  left: 100px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 88px;
+  color: #353535;
+}
+
+.testimonial .tcard {
+  position: absolute;
+  width: 579px;
+  height: 353px;
+  right: 100px;
+  background: #F8F8F8;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1), -5px -10px 15px rgba(255, 255, 255, 0.86);
+  border-radius: 25px;
+}
+
+
+.tcard .header {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin-top: 20px;
+  margin-bottom: 2em;
+  /* border: 3px solid #000; */
+}
+
+.tcard .avatar {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 02em;
+  background: #C4C4C4;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 100px;
+}
+
+
+.tcard .name {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2em;
+  text-align: left;
+  padding-left: 5em;
+  height: 23px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  /* border: 1px solid #000; */
+  color: #333355;
+}
+
+.tcard .content {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid #000; */
+}
+
+.content .quoteOpen {
+  position: absolute;
+  left: 2em;
+  top: 6em;
+  margin: 0;
+}
+
+.content .quoteClose {
+  position: absolute;
+  left: 22em;
+  top: 17em;
+  margin: 0;
+}
+
+
+.tcard .post {
+  position: relative;
+  width: 400px;
+  height: 184px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 5em;
+  color: #353535;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 1006px;
+  background-image: url('./assets/images/bg/GreenStage.svg');
+  background-repeat: no-repeat;
+}
+
+.contact .watermark {
+  position: absolute;
+  width: 100%;
+  height: 234px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 180px;
+  line-height: 234px;
+  text-align: right;
+  right: 100px;
+  color: rgba(53, 53, 53, 0.05);
+}
+
+.contact .text {
+
+  position: absolute;
+  width: 483px;
+  height: 419px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 50px;
+  line-height: 60px;
+  top: 70px;
+  left: 100px;
+  color: #353535;
+}
+
+.contact .contactCard {
+  position: absolute;
+  width: 530px;
+  right: 100px;
+  height: 750px;
+  top: 150px;
+  background: #F8F8F8;
+  box-shadow: 5px 5px 17px rgba(0, 0, 0, 0.15), -5px -5px 12px rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  /* border: 1px solid #000; */
+}
+
+.contactCard .heading {
+  width: 100%;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 41px;
+  font-weight: bold;
+  /* border: 1px solid #000; */
+  padding: 30px 0px 0px 30px;
+  color: #353535;
+}
+
+.contactCard p {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid #000; */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 0px 0px 0px 30px;
+  color: #353535;
+  margin: 0;
+
+}
+
+.contactCard .input {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+
+  /* border: 1px solid #000; */
+}
+
+.contactCard .input p {
+  padding: 10px 20px;
+  margin-left: 40px;
+  width: 100px;
+  font-size: 18px;
+  /* border: 1px solid #000; */
+}
+
+.contactCard span {
+  color: red;
+}
+
+.contactCard input[type='text'],
+input[type='email'] {
+  width: 75%;
+  height: auto;
+  background: #F8F8F8;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.05), -5px -10px 15px rgba(255, 255, 255, 0.86);
+  border-radius: 45px;
+  outline: none;
+  border: none;
+  margin-left: 30px;
+  padding: 20px 30px;
+}
+
+
+
+.contactCard textarea {
+  width: 75%;
+  height: 150px;
+  outline: none;
+  border: none;
+  margin-left: 30px;
+  padding: 20px 30px;
+
+  background: #F8F8F8;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.05), -5px -10px 15px rgba(255, 255, 255, 0.86);
+  border-radius: 14px;
+}
+
+.contactCard input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  box-shadow: inset 5px 10px 15px rgba(0, 0, 0, 0.05), inset -5px -10px 15px rgba(255, 255, 255, 0.86);
+}
+
+.contactCard .sendBtn {
+  /* border: 1px solid #000; */
+  width: 135px;
+  text-align: center;
+  padding: 20px 10px;
+  background: #A3FFCD;
+  border-radius: 32px;
+  margin: 40px 0px 0px 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  color: #353535;
+  cursor: pointer;
+}
+
+.contactCard .sendBtn:hover {
+  background-color: #40e68d;
+  transition: 0.5s ease-in-out;
+}
+
+.contact .otherContact {
+  position: absolute;
+  width: 500px;
+  height: 260px;
+  bottom: 100px;
+  left: 100px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 23px;
+
+  color: #000000;
+
+}
+
+.contact .heading {
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.contact .otherContact p {
+  color: #353535;
+  padding: 0px 0px 0px 15px;
+  margin: 0px;
+  /* border: 1px solid #000; */
+
+}
+
+.contact .otherContact .iconify {
+  color: #6AAF89;
+  font-size: 32px;
+  /* border: 1px solid #000; */
+}
+
+.otherContact .texts {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 10px 10px;
+  margin-left: 0px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 23px;
+  color: #000000;
+
+
 }
