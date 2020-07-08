@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  height: auto;
 }
 
 /**************************************************************************************************************************/
@@ -1048,10 +1049,11 @@ input[type='email'] {
   border: none;
   margin-left: 30px;
   padding: 20px 30px;
-
+  font-family: "Roboto", sans-serif;
   background: #F8F8F8;
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.05), -5px -10px 15px rgba(255, 255, 255, 0.86);
   border-radius: 14px;
+  resize: none;
 }
 
 .contactCard input[type='text']:focus,
@@ -1136,6 +1138,107 @@ textarea:focus {
   font-size: 22px;
   line-height: 23px;
   color: #000000;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: #E3FFF0;
+  display: block;
+}
+
+footer .hero {
+  width: 239px;
+  height: 212.51px;
+  margin: 25px 10px 10px 100px;
+  padding-top: 10px;
+  float: left;
+
+}
+
+footer .hero .logo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 41px;
+  color: #353535;
+}
+
+footer .hero p {
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #353535;
+}
+
+footer .product,
+.legals {
+  width: 200px;
+  margin: 25px 10px 10px 100px;
+  float: left;
+}
+
+footer .location {
+  width: 400px;
+  margin: 25px 10px 10px 100px;
+  /* border: 1px solid #000; */
+  float: left;
+}
+
+footer h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 510;
+  font-size: 22px;
+  line-height: 23px;
+  /* identical to box height */
 
 
+}
+
+footer li {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #353535;
+}
+
+footer li:hover {
+  color: #0d6637;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0d6637;
+  font-weight: 400;
+}
+
+.location .map {
+  background-image: url('./assets/images/map.svg');
+  width: 233px;
+  height: 227px;
+  background-repeat: no-repeat;
+}
+
+footer .copyright1 {
+  /* position: absolute; */
+  margin: 25px 0px 0px 100px;
+  clear: both;
+  width: 85%;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 1px solid rgba(53, 53, 53, 0.2);
+  ;
 }
