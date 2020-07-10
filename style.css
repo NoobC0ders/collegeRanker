@@ -1050,13 +1050,5 @@ footer .copyright1 {
   padding: 20px 10px;
   text-align: center;
   border-top: 1px solid rgba(53, 53, 53, 0.2);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 17.8246px;
-  line-height: 21px;
-  /* identical to box height */
-
-
-  color: #353535;
+  ;
 }
