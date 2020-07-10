@@ -3,7 +3,6 @@ body {
     height: 800px;
     padding: 0;
     margin: 0;
-    background-color: ;
 }
 
 a {
@@ -158,11 +157,6 @@ a {
     color: #353535;
 }
 
-
-.degree {
-
-    /* border: 1px solid #000; */
-}
 
 
 ul.degree li {
