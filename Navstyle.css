@@ -142,12 +142,6 @@ a {
     font-weight: 600;
     font-size: 25px;
     line-height: 40px;
-    /* overflow-y: scroll; */
-    /* overflow-x: hidden; */
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
     color: #353535;
 }
 
@@ -182,7 +176,7 @@ a {
     padding: 5px 10px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 15px;
     color: #353535;
@@ -190,8 +184,8 @@ a {
 }
 
 
-ul.degree li .fa {
-    font-size: 8px;
+.degree li .fa {
+    font-size: 6px;
 }
 
 
