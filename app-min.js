@@ -5,17 +5,17 @@ function addNavCon(event) {
 
     let x = window.matchMedia("(max-width: 920px)")
     if (x.matches) { // If media query matches
-        if (navCon.style.height == '100vh') {
-            event.classList.remove("active");
-            navCon.style.position = "fixed";
+        if (navCon.style.height == '80vh') {
+            // event.classList.remove("active");
+            navCon.style.position = "absolute";
             document.getElementById('dropdownicon').style.transform = 'rotateX(0deg)';
             return navCon.style.height = '0em';
         }
 
         console.log(event);
         document.getElementById('dropdownicon').style.transform = 'rotateX(180deg)';
-        navCon.style.height = '100vh';
-        event.classList.add("active");
+        navCon.style.height = '80vh';
+        // event.classList.add("active");
         navCon.style.position = "absolute";
         return;
     }
@@ -35,15 +35,48 @@ function addNavCon(event) {
 
 }
 /****************************************************************/
-function viewLinks(event) {
+function viewLinks(element, {
+    expand
+}) {
+    let x = window.innerWidth;
 
-    if (navLinks.style.transform == 'scale(1)') {
-        navLinks.style.transform = 'scale(0)';
-        navCon.style.height = '0em';
-        document.body.getElementsByClassName("active")[0].classList.remove("active");
-        return
+    // for small screen
+    if (x < 601) {
+        if (!expand) {
+            navLinks.style.height = '100vh';
+            navLinks.style.display = 'block';
+            element.setAttribute("onclick", 'viewLinks(this, {expand:true})');
+        } else {
+            navLinks.style.height = '0vh';
+            navLinks.style.display = 'none';
+            element.setAttribute("onclick", 'viewLinks(this, {expand:false})');
+        }
+
     }
-    navLinks.style.transform = 'scale(1)';
+
+    // for small screen
+    if (x < 841) {
+        if (!expand) {
+            // navLinks.style.height = '100vh';
+            navLinks.style.display = 'block';
+            element.setAttribute("onclick", 'viewLinks(this, {expand:true})');
+        } else {
+            // navLinks.style.height = '0vh';
+            navLinks.style.display = 'none';
+            element.setAttribute("onclick", 'viewLinks(this, {expand:false})');
+        }
+
+    }
+
+
+
+    // if (navLinks.style.transform == 'scale(1)') {
+    //     navLinks.style.transform = 'scale(0)';
+    //     navCon.style.height = '0em';
+    //     document.body.getElementsByClassName("active")[0].classList.remove("active");
+    //     return
+    // }
+    // navLinks.style.transform = 'scale(1)';
 }
 
 const showNavLinks = () => {
@@ -112,4 +145,4 @@ function showDegree(element, {
 
 
 
-window.addEventListener('resize', showNavLinks);
+// window.addEventListener('resize', showNavLinks);

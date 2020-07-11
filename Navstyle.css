@@ -73,6 +73,7 @@ a {
     font-size: 18px;
     line-height: 29px;
     color: #353535;
+    transition: 0.5s ease-in-out;
 }
 
 
@@ -114,7 +115,7 @@ a {
 
 /***** Nav bar contect ******/
 .navContent {
-    display: inline-flex;
+    /* display: inline-flex; */
     justify-Content: center;
     position: absolute;
     width: 100%;
@@ -122,19 +123,21 @@ a {
     top: 4rem;
     background-color: #e7e7e7;
     z-index: 0;
+    display: inline;
     transition: height 500ms ease-in-out;
     overflow-y: scroll;
-    padding-left: 100px;
+    padding-left: 5%;
     border: s solid #000;
 }
 
 .navContent ul {
     text-decoration: none;
     list-style: none;
-    width: 15rem;
+    width: auto;
+    min-width: 200px;
     display: block;
-    /* border: 1px solid rgb(255, 255, 255); */
-    margin: 2%;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 1vw 1vw 1vw 5vw;
     padding: 1rem;
     float: left;
     font-family: "Roboto", sans-serif;
@@ -145,9 +148,6 @@ a {
     color: #353535;
 }
 
-.navContent ul::-webkit-scrollbar {
-    scrollbar-width: none;
-}
 
 .navContent li {
     width: 80%;
@@ -214,8 +214,18 @@ a {
 
 
 
-
-
+@media screen and (max-width: 1440px) {
+    .navContent ul {
+        text-decoration: none;
+        list-style: none;
+        width: auto;
+        min-width: 200px;
+        display: block;
+        border: 1px solid rgb(255, 255, 255);
+        margin: 1vw 1vw 1vw 1vw;
+        padding: 0rem;
+    }
+}
 
 
 
@@ -238,28 +248,37 @@ a {
         font-size: 30px;
         transition: 1s ease-in-out;
         margin-left: 100px;
+        /* border: 1px solid #000; */
+        margin-right: 10px;
     }
 
-    .links {
+    .nav .links {
         width: 30em;
-        border: 1px solid #000;
+        /* border: 1px solid #000; */
         margin: 0px 0px 0px 0px;
+        transition: 0.5s;
+
     }
 
-    .links ul {
-        margin-left: 5px;
+    .nav .links ul {
+        margin: 0;
         text-decoration: none;
+        /* border: 1px solid #000; */
         padding: 0;
     }
 
-    .links li {
+    .nav .links li {
         text-decoration: none;
         list-style: none;
-        padding: 1.5em 1em;
+        padding: 10px 10px;
+        margin: 6px 0px 0px 0px;
         float: left;
-        font-weight: 600;
-        /* border: 1px solid #000; */
-
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 29px;
+        color: #353535;
     }
 
     /***** Nav bar contect ******/
@@ -303,67 +322,83 @@ a {
 
 @media screen and (max-width: 840px) {
     .nav {
+        position: fixed;
         width: 100%;
         height: 4rem;
-        background-color: white;
+        background-color: red;
         z-index: 2;
-        /* border: 1px solid #000; */
+        border: 1px solid #000;
         display: block;
-        padding: 0;
-        margin: 0em;
+        top: 0;
     }
 
     .nav .logo {
-        width: 50px;
+        width: 1em;
         height: auto;
-        padding: 12px 5px;
-        font-size: 30px;
-        transition: 1s ease-in-out;
-        margin-left: 100px;
-        /* border: 1px solid #000; */
+        padding: 5px 0px;
+        font-size: 44px;
+        margin-left: 50px;
+
     }
 
-    .links {
-
-        position: absolute;
+    .nav .links {
         width: 100%;
-        height: 22em;
-        background-color: rgb(68, 118, 175);
-        transform: scale(1);
-        padding: 0;
-        margin: 0;
+        display: none;
+        position: absolute;
         border: 1px solid #000;
+        margin: 8px 0px;
+        background-color: white;
+
 
     }
 
-    .links {
-        width: 30em;
-        border: 1px solid #000;
-        margin: 0px 0px 0px 0px;
+    .nav .active {
+        background-color: #e7e7e7;
+        transform: scaleY(1);
+        transition: 1s ease-in-out;
+        color: black;
     }
 
-    .links ul {
-        margin-left: 5px;
+    .nav .links ul {
+        margin: 0px 0px 0px 40px;
+        height: 3.5em;
+        width: 100%;
         text-decoration: none;
+        /* border: 1px solid #000; */
         padding: 0;
+        text-align: center;
     }
 
-    .links li {
+    .nav .links li {
+
         text-decoration: none;
         list-style: none;
-        padding: 1.5em 1em;
-        float: left;
-        font-weight: 600;
+        padding: 10px;
+        margin: 6px 0px 0px 10px;
         /* border: 1px solid #000; */
-
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 29px;
+        color: #353535;
+        transition: 0.5s ease-in-out;
     }
 
-    .links li:hover {
-        background-color: blanchedalmond;
+
+
+    .nav li:hover {
+        color: red;
     }
 
 
-
+    .nav .navBarIcon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 32px;
+        display: block;
+    }
 
 
     .signBtn {
@@ -384,39 +419,34 @@ a {
         box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
     }
 
-    .nav .navBarIcon {
-        /* position: absolute; */
-        /* right: 10px; */
-        /* top: 10px; */
-        /* font-size: 32px; */
-        display: block;
-    }
-
     /***** Nav bar contect ******/
     .navContent {
         display: block;
         position: relative;
-        width: 60vw;
         right: 0;
+        left: 0;
         height: 0em;
-        top: 3.5rem;
+        top: 7.6rem;
+        /* padding-left: 6em; */
+        overflow-x: hidden;
         transition: height 500ms ease-in-out;
     }
 
     .navContent ul {
         text-decoration: none;
-        width: 90%;
+        width: 100%;
+        min-width: 8em;
         display: block;
-        border: 1px solid rgb(255, 255, 255);
-        margin: 2%;
+        border: 0px solid black;
+        margin: 0px 0px 10px 0px;
         padding: 1rem 0rem 0rem 1.5rem;
         float: left;
     }
 
     .navContent li {
         width: 100%;
-        border-bottom: 1px solid rgb(170, 157, 37);
-        padding: 1rem 0rem;
+        border-bottom: 0px solid rgb(49, 46, 13);
+        padding: 0.5rem 0rem;
         margin: 2px;
     }
 
@@ -429,45 +459,132 @@ a {
 
 
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 600px) {
+    .nav {
+        position: fixed;
+        width: 100%;
+        height: 4rem;
+        background-color: rgb(255, 255, 255);
+        z-index: 2;
+        border: 0px solid #000;
+        display: block;
+        top: 0;
+    }
 
     .nav .logo {
-        margin-top: 10px;
-        font-size: 24px;
+        width: 1em;
+        height: auto;
+        padding: 5px 0px;
+        font-size: 44px;
+        margin-left: 20px;
+
     }
 
-    .signBtn {
+    .nav .links {
+        width: 100%;
+        height: 0vh;
         display: none;
+        position: absolute;
+        border: 0px solid #000;
+
+        margin: 6px 0px;
+        background-color: rgb(255, 255, 255);
+
     }
+
+    .nav .active {
+        background-color: #e7e7e7;
+        transform: scaleY(1);
+        transition: 1s ease-in-out;
+        color: black;
+    }
+
+    .nav .links ul {
+        margin: 0px 0px 0px 0px;
+        height: 100%;
+        min-width: 100%;
+        text-decoration: none;
+        /* border: 1px solid #000; */
+        display: block;
+        padding: 0;
+        text-align: left;
+        margin: 0;
+        float: left;
+
+    }
+
+    .nav .links li {
+        width: 80%;
+        text-decoration: none;
+        list-style: none;
+        padding: 10px 0px;
+        margin: 0px 0px 0px 20px;
+        border-bottom: 1px solid rgba(165, 161, 161, 0.61);
+        float: left;
+    }
+
+
+
+    .nav li:hover {
+        color: #3ad884;
+    }
+
 
     .nav .navBarIcon {
-        margin-top: 10px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 32px;
+        display: block;
     }
 
+
+    .signBtn {
+        position: absolute;
+        width: auto;
+        padding: 6px 15px;
+        right: 4rem;
+        top: 0em;
+        border-radius: 40px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        color: #353535;
+        margin-top: 12px;
+        background-color: #48fa9a;
+        border-radius: 35px;
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /***** Nav bar contect ******/
     .navContent {
         display: block;
         position: relative;
-        width: 100%;
-        right: 0;
+        left: 120px;
         height: 0em;
-        top: 3.5rem;
+        top: 4em;
+        /* padding-left: 6em; */
+        overflow-x: hidden;
         transition: height 500ms ease-in-out;
     }
 
     .navContent ul {
         text-decoration: none;
-        width: 90%;
+        width: 100%;
+        min-width: 8em;
         display: block;
-        border: 1px solid rgb(255, 255, 255);
-        margin: 2%;
-        padding: 1rem 0rem 0rem 1.5rem;
+        border: 0px solid black;
+        margin: 0px 0px 10px 0px;
+        padding: 1rem 0rem 0rem 0rem;
         float: left;
     }
 
     .navContent li {
         width: 100%;
-        border-bottom: 1px solid rgb(170, 157, 37);
-        padding: 1rem 0rem;
-        margin: 2px;
+        border-bottom: 0px solid rgb(49, 46, 13);
+        padding: 0.5rem 0rem;
+        margin: 2px 0px;
     }
+
 }
