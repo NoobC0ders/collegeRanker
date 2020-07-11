@@ -29,12 +29,13 @@
                         <li>About us</li>
                     </a>
                     <a href="#">
-                        <li onclick="addNavCon(this)" ">Colleges  <i id=" dropdownicon" class=" fa fa-caret-down"
+                        <li onclick="addNavCon(this)" ">Colleges  <i id="dropdownicon" class=" fa fa-caret-down"
                             aria-hidden="true"></i>
                         </li>
                     </a>
                     <a href=" #">
-                        <li>Exam</li>
+                        <li>Exam  <i id="dropdownicon" class=" fa fa-caret-down"
+                            aria-hidden="true"></i></li>
                     </a>
                     <a href="#contact">
                         <li>Contact</li>
@@ -55,27 +56,56 @@
                 <ul>
                     By Degree
 
-                        <li class="engg"><i class="fa fa-caret-right" aria-hidden="true"></i> Engineering
-                        <ul class="degree" style="margin: 0;padding: 5px;">
+                        <li id="engg" onclick="showDegree(this,{expand:false})"><i class="fa fa-caret-right" aria-hidden="true"></i> Engineering
+                       <div class="degree">  <ul style="margin: 0;padding: 5px;">
                             <li>  <i class="fa fa-circle" aria-hidden="true"></i> B. Tech</li>
                             <li><i class="fa fa-circle" aria-hidden="true"></i> M. Tech</li>
                             <li><i class="fa fa-circle" aria-hidden="true"></i> PhD</li>
                             <li><i class="fa fa-circle" aria-hidden="true"></i> Diploma</li>
                         </ul>
+                    </div>
                         </li>
 
-                    <a href="">
-                        <li><i class="fa fa-caret-right" aria-hidden="true"></i> Medical</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa fa-caret-right" aria-hidden="true"></i> Management</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa fa-caret-right" aria-hidden="true"></i> Commerce</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa fa-caret-right" aria-hidden="true"></i> Arts</li>
-                    </a>
+
+                        <li id="medical" onclick="showDegree(this,{expand:false})"><i class="fa fa-caret-right" aria-hidden="true"></i> Medical
+                            <div class="degree">  <ul style="margin: 0;padding: 5px;">
+                                <li>  <i class="fa fa-circle" aria-hidden="true"></i> B.Sc</li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i> M.Sc</li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i> B.Pharma</li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i> M.Pharma</li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i> M.D</li>
+                            </ul>
+                        </div>
+                        </li>
+
+                        <li id="management" onclick="showDegree(this,{expand:false})"><i class="fa fa-caret-right" aria-hidden="true"></i> Management
+                            <div class="degree">  <ul style="margin: 0;padding: 5px;">
+                                <li>  <i class="fa fa-circle" aria-hidden="true"></i> BBA</li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i> MBA</li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i> PGDM</li>
+                            </ul>
+                        </div>
+                        </li>
+
+                        <li id="commerce" onclick="showDegree(this,{expand:false})"> <i class="fa fa-caret-right" aria-hidden="true"></i> Commerce
+                            <div class="degree">  <ul style="margin: 0;padding: 5px;">
+                                <li>  <i class="fa fa-circle" aria-hidden="true"></i> B.Com</li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i> M.Com</li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i> C.A</li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i> CMA</li>
+                            </ul>
+                        </div>
+                        </li>
+
+                        <li id="art" onclick="showDegree(this,{expand:false})"><i class="fa fa-caret-right" aria-hidden="true"></i> Arts
+
+                            <div class="degree">  <ul style="margin: 0;padding: 5px;">
+                                <li>  <i class="fa fa-circle" aria-hidden="true"></i> B.A</li>
+                                <li><i class="fa fa-circle" aria-hidden="true"></i> M.A</li>
+                            </ul>
+                        </div>
+                        </li>
+
 
                 </ul>
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400,900;1,500&display=swap");
 
 body {
   padding: 0;
@@ -850,6 +850,12 @@ input[type='email'] {
   padding: 20px 30px;
 }
 
+.contact input[type='text']::-webkit-input-placeholder,
+input[type='email']::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+
 
 
 .contactCard textarea {
@@ -887,6 +893,8 @@ textarea:focus {
   line-height: 29px;
   color: #353535;
   cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(128, 127, 127, 0.2);
+
 }
 
 .contactCard .sendBtn:hover {
