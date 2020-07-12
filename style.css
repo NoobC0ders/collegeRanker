@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   height: auto;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -1067,4 +1069,34 @@ footer .copyright1 {
 
 
   color: #353535;
+}
+
+
+
+@media screen and (max-width: 840px) {
+
+
+  .serviceSection {
+    display: none;
+  }
+
+  .growthSection {
+    display: none;
+  }
+
+  .profitSection {
+    display: none;
+  }
+
+  .testimonial {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .serviceSection {
+    display: none;
+  }
 }

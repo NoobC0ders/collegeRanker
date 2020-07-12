@@ -3,18 +3,28 @@ const navLinks = document.getElementById('navLinks');
 
 function addNavCon(event) {
 
+
     let x = window.matchMedia("(max-width: 920px)")
     if (x.matches) { // If media query matches
-        if (navCon.style.height == '80vh') {
-            // event.classList.remove("active");
+
+
+        if (navCon.style.height == '90vh') {
+            x = window.matchMedia("(max-width: 600px)")
+            if (x.matches) {
+                event.classList.remove('active1');
+            }
             navCon.style.position = "absolute";
-            document.getElementById('dropdownicon').style.transform = 'rotateX(0deg)';
+            event.children[0].style.transform = 'rotateZ(0deg)';
             return navCon.style.height = '0em';
+        }
+        x = window.matchMedia("(max-width: 600px)")
+        if (x.matches) {
+            event.classList.add('active1');
         }
 
         console.log(event);
-        document.getElementById('dropdownicon').style.transform = 'rotateX(180deg)';
-        navCon.style.height = '80vh';
+        event.children[0].style.transform = 'rotateZ(180deg)';
+        navCon.style.height = '90vh';
         // event.classList.add("active");
         navCon.style.position = "absolute";
         return;
@@ -24,12 +34,14 @@ function addNavCon(event) {
 
     if (navCon.style.height == '30em' || navCon.style.height == '100vh') {
 
-        document.getElementById('dropdownicon').style.transform = 'rotateZ(0deg)';
+        event.children[0].style.transform = 'rotateZ(0deg)';
+
         navCon.style.position = "absolute";
         return navCon.style.height = '0em';
 
     }
-    document.getElementById('dropdownicon').style.transform = 'rotateZ(180deg)';
+    event.children[0].style.transform = 'rotateZ(180deg)';
+    // document.getElementById('dropdownicon').style.transform = 'rotateZ(180deg)';
 
     navCon.style.height = '30em';
 

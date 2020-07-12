@@ -89,7 +89,15 @@ a {
     top: 10px;
     font-size: 32px;
     display: none;
+    color: #353535;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
+
+.nav .navBarIcon:hover {
+    color: #3ad884;
+}
+
 
 .signBtn {
     position: absolute;
@@ -125,7 +133,6 @@ a {
     z-index: 0;
     display: inline;
     transition: height 500ms ease-in-out;
-    overflow-y: scroll;
     padding-left: 5%;
     border: s solid #000;
 }
@@ -136,7 +143,7 @@ a {
     width: auto;
     min-width: 200px;
     display: block;
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
     margin: 1vw 1vw 1vw 5vw;
     padding: 1rem;
     float: left;
@@ -221,7 +228,7 @@ a {
         width: auto;
         min-width: 200px;
         display: block;
-        border: 1px solid rgb(255, 255, 255);
+        /* border: 1px solid rgb(255, 255, 255); */
         margin: 1vw 1vw 1vw 1vw;
         padding: 0rem;
     }
@@ -375,7 +382,7 @@ a {
         list-style: none;
         padding: 10px;
         margin: 6px 0px 0px 10px;
-        /* border: 1px solid #000; */
+        border: 0px solid #000;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -481,22 +488,23 @@ a {
     }
 
     .nav .links {
+        position: relative;
         width: 100%;
         height: 0vh;
         display: none;
         position: absolute;
         border: 0px solid #000;
-
         margin: 6px 0px;
         background-color: rgb(255, 255, 255);
 
     }
 
-    .nav .active {
-        background-color: #e7e7e7;
+    .nav .active1 {
+        background-color: rgb(245, 245, 245);
         transform: scaleY(1);
         transition: 1s ease-in-out;
         color: black;
+        border-radius: 10px;
     }
 
     .nav .links ul {
@@ -514,13 +522,23 @@ a {
     }
 
     .nav .links li {
-        width: 80%;
-        text-decoration: none;
+        width: 90%;
         list-style: none;
-        padding: 10px 0px;
+        padding: 10px 10px;
         margin: 0px 0px 0px 20px;
-        border-bottom: 1px solid rgba(165, 161, 161, 0.61);
+        border-bottom: 1px solid rgba(218, 218, 218, 0.466);
         float: left;
+        border-radius: 10px;
+    }
+
+    /* .nav .links li.active1 {
+        box-shadow: -5px -5px 25px rgba(133, 133, 133, 0.15);
+    } */
+
+    .links li .fa {
+        float: right;
+        margin-top: 5px;
+        font-size: 24px;
     }
 
 
@@ -564,9 +582,16 @@ a {
         left: 120px;
         height: 0em;
         top: 4em;
+        background-color: rgb(245, 245, 245);
         /* padding-left: 6em; */
         overflow-x: hidden;
         transition: height 500ms ease-in-out;
+        padding-left: 30px;
+        border-radius: 10px;
+        /* box-shadow: -5px -5px 25px rgba(133, 133, 133, 0.15); */
+
+
+        margin: 0;
     }
 
     .navContent ul {
@@ -576,11 +601,12 @@ a {
         display: block;
         border: 0px solid black;
         margin: 0px 0px 10px 0px;
-        padding: 1rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
         float: left;
     }
 
     .navContent li {
+        font-size: 15px;
         width: 100%;
         border-bottom: 0px solid rgb(49, 46, 13);
         padding: 0.5rem 0rem;
