@@ -125,6 +125,7 @@ a {
 .navContent {
     /* display: inline-flex; */
     justify-Content: center;
+    display:none;
     position: absolute;
     width: 100%;
     height: 0em;
