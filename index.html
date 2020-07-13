@@ -11,6 +11,8 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" defer></script>
     <script src="app-min.js" defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="hamburgers.css">
+
 
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
 </head>
@@ -29,7 +31,8 @@
                         <li>About us</li>
                     </a>
                     <a href="#">
-                        <li onclick="addNavCon(this)">Colleges <i class=" fa fa-caret-down" aria-hidden="true"></i>
+                        <li id="collageDropDown" onclick="addNavCon('collageDropDown', {expand:false})">Colleges <i
+                                class=" fa fa-caret-down" aria-hidden="true"></i>
                         </li>
                     </a>
                     <a href=" #">
@@ -46,11 +49,18 @@
             </a>
 
             <div class="navBarIcon" class="icon" onclick="viewLinks(this, {expand:false})">
-                <i class="fa fa-bars"></i>
+                <div class="hamburger hamburger--3dx">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                <!-- <i class="fa fa-bars"></i> -->
             </div>
 
 
-            <div class="navContent" id="navCon">
+            <div class="navContent" id="collegeCon">
+                <div title="close" class="closeIcon" onclick="addNavCon('collageDropDown',{expand:true})"><i
+                        class="fa fa-close" aria-hidden="true"></i></div>
                 <ul>
                     By Degree
 

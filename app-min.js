@@ -1,49 +1,38 @@
-const navCon = document.getElementById('navCon');
+const collegeCon = document.getElementById('collegeCon');
 const navLinks = document.getElementById('navLinks');
 
-function addNavCon(event) {
-
-
-    let x = window.matchMedia("(max-width: 920px)")
-    if (x.matches) { // If media query matches
-
-
-        if (navCon.style.height == '90vh') {
-            x = window.matchMedia("(max-width: 600px)")
-            if (x.matches) {
-                event.classList.remove('active1');
-            }
-            navCon.style.position = "absolute";
-            event.children[0].style.transform = 'rotateZ(0deg)';
-            return navCon.style.height = '0em';
-        }
+function addNavCon(id, {
+    expand
+}) {
+    element = document.getElementById(id);
+    if (expand) {
+        element.setAttribute("onclick", 'addNavCon(`collageDropDown`,{expand:false})');
         x = window.matchMedia("(max-width: 600px)")
         if (x.matches) {
-            event.classList.add('active1');
+            element.classList.remove('active1');
+        }
+        collegeCon.style.position = "absolute";
+        element.children[0].style.transform = 'rotateZ(0deg)';
+        collegeCon.style.height = '0em';
+    } else {
+        element.setAttribute("onclick", 'addNavCon(`collageDropDown`,{expand:true})');
+        x = window.matchMedia("(max-width: 600px)")
+        if (x.matches) {
+            element.classList.add('active1');
+            element.children[0].style.transform = 'rotateZ(180deg)';
+            collegeCon.style.height = '80vh';
+            collegeCon.style.position = "absolute";
+            return
         }
 
-        console.log(event);
-        event.children[0].style.transform = 'rotateZ(180deg)';
-        navCon.style.height = '90vh';
-        // event.classList.add("active");
-        navCon.style.position = "absolute";
-        return;
+        x = window.matchMedia("(max-width: 1820px)")
+        if (x.matches) {
+            element.children[0].style.transform = 'rotateZ(180deg)';
+            collegeCon.style.height = '30em';
+        }
     }
 
-    /***************************************************************/
 
-    if (navCon.style.height == '30em' || navCon.style.height == '100vh') {
-
-        event.children[0].style.transform = 'rotateZ(0deg)';
-
-        navCon.style.position = "absolute";
-        return navCon.style.height = '0em';
-
-    }
-    event.children[0].style.transform = 'rotateZ(180deg)';
-    // document.getElementById('dropdownicon').style.transform = 'rotateZ(180deg)';
-
-    navCon.style.height = '30em';
 
 }
 /****************************************************************/
@@ -59,6 +48,9 @@ function viewLinks(element, {
             navLinks.style.display = 'block';
             element.setAttribute("onclick", 'viewLinks(this, {expand:true})');
         } else {
+            addNavCon('collageDropDown', {
+                expand: true
+            });
             navLinks.style.height = '0vh';
             navLinks.style.display = 'none';
             element.setAttribute("onclick", 'viewLinks(this, {expand:false})');
@@ -84,7 +76,7 @@ function viewLinks(element, {
 
     // if (navLinks.style.transform == 'scale(1)') {
     //     navLinks.style.transform = 'scale(0)';
-    //     navCon.style.height = '0em';
+    //     collegeCon.style.height = '0em';
     //     document.body.getElementsByClassName("active")[0].classList.remove("active");
     //     return
     // }
@@ -99,11 +91,11 @@ const showNavLinks = () => {
         navLinks.style.transform = 'scale(1)';
         // document.body.getElementsByClassName("active").classList.remove('active');
 
-        navCon.style.height = '0em';
+        collegeCon.style.height = '0em';
     } else {
         navLinks.style.transform = 'scale(0)';
         // document.body.getElementsByClassName("active")[0].classList.remove("active");
-        navCon.style.height = '0em';
+        collegeCon.style.height = '0em';
     }
 
 };
@@ -158,3 +150,32 @@ function showDegree(element, {
 
 
 // window.addEventListener('resize', showNavLinks);
+
+
+/*******************************For hamburgur effect********************************** */
+/**
+ * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+ *
+ * @private
+ * @author Todd Motto
+ * @link https://github.com/toddmotto/foreach
+ * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+ * @callback requestCallback      callback   - Callback function for each iteration.
+ * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+ * @returns {}
+ */
+var forEach = function (t, o, r) {
+    if ("[object Object]" === Object.prototype.toString.call(t))
+        for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+    else
+        for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+};
+
+var hamburgers = document.querySelectorAll(".hamburger");
+if (hamburgers.length > 0) {
+    forEach(hamburgers, function (hamburger) {
+        hamburger.addEventListener("click", function () {
+            this.classList.toggle("is-active");
+        }, false);
+    });
+}
