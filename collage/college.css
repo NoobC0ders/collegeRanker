@@ -1,0 +1,416 @@
+.heroSectionCollege {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+    color: #353535;
+}
+
+.collegesWatermark {
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 150px;
+    /* border: 1px solid #000; */
+
+    color: rgba(53, 53, 53, 0.05);
+}
+
+.heroCollege {
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+}
+
+.heroCollege .heading {
+    width: 100%;
+    margin: 150px 0px 0px 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    /* border: 1px solid #000; */
+}
+
+.heroCollege .text {
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid #000; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    color: #353535;
+}
+
+.heroCollege .textSmall {
+    width: 100%;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    text-align: center;
+    margin: 80px 0px 0px 0px;
+    color: #353535;
+    /* border: 1px solid #000; */
+}
+
+.heroCollege .textSmall img {
+    width: 50px;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.heroCollege .textSmall img:hover {
+    width: 55px;
+    transition: 0.5s ease-in-out;
+}
+
+.quickFilterSection {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    position: sticky;
+}
+
+
+
+.quickFilterSection button {
+    /* background-color: #4CAF50; */
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.quickFilterSection button:hover {
+    box-shadow: 0px 4px 4px rgba(34, 33, 33, 0.486);
+    transition: 0.5s ease-in-out;
+}
+
+.quickFilterSection button:focus {
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.637);
+    transition: 0.5s ease-in-out;
+}
+
+.quickFilterSection .trending {
+    background: linear-gradient(90deg, #00b09b 0%, #96c93d 100%);
+    border-radius: 200px;
+}
+
+.quickFilterSection .top10 {
+    background: linear-gradient(90deg, #0575e6 0%, #021b79 100%);
+    border-radius: 200px;
+}
+
+.quickFilterSection .bestCSE {
+    background: linear-gradient(90deg, #d70652 0%, #ff025e 100%);
+    border-radius: 200px;
+}
+
+.quickFilterSection .bestME {
+    background: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
+    border-radius: 200px;
+}
+
+.quickFilterSection .bestCE {
+    background: linear-gradient(90deg, #02aab0 0%, #00cdac 100%);
+    border-radius: 200px;
+}
+
+.quickFilterSection .bestECE {
+    background: linear-gradient(90deg, #bf5ae0 0%, #a811da 100%);
+    border-radius: 200px;
+}
+
+.quickFilterSection .bestEE {
+    background: linear-gradient(90deg, #00bf8f 0%, #001510 100%);
+    border-radius: 200px;
+}
+
+.SearchSection {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+    margin-top: 20px;
+    min-height: 900px;
+}
+
+.SearchSection .filter {
+    width: 420px;
+    min-height: 600px;
+    height: auto;
+    /* border: 1px solid #000; */
+    float: left;
+    margin-left: 100px;
+}
+
+.filter .byDegree {
+    width: 420px;
+    height: auto;
+    background: #f9f9f9;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1),
+        -8px -12px 15px rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding: 15px 0px;
+    cursor: pointer;
+    margin-top: 15px;
+    /* border: 1px solid #000; */
+}
+
+.filter .byDegree ul {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.filter .byDegree li {
+    list-style-type: none;
+    padding: 5px 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #353535;
+}
+
+.filter .byDegree li:first-child {
+    margin-top: 20px;
+}
+
+.byDegree .enggdegree,
+.meddegree,
+.mandegree,
+.comdegree,
+.artsdegree {
+    height: 0px;
+    max-height: 200px;
+    transition: 0.9s ease-in-out;
+    overflow: hidden;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.filter .byLocation {
+    width: 420px;
+    height: 350px;
+    background: #f9f9f9;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1),
+        -8px -12px 15px rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    padding: 15px 0px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /* border: 1px solid #000; */
+}
+
+.filter .byLocation p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #353535;
+    margin: 0px 0px 0px 40px;
+    padding: 10px 0px;
+}
+
+.filter .byLocation div {
+    width: 150px;
+    margin-left: 35px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #353535;
+    /* border: 1px solid #000; */
+    float: left;
+}
+
+.filter .byLocation div.break {
+    border-left: 1px solid rgba(0, 0, 0, 0.185);
+    float: left;
+    width: 1px;
+    height: 70%;
+    margin: 10px 0px 0px 10px;
+}
+
+.SearchSection .result {
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.result .collegeCard {
+    width: 900px;
+    height: 400px;
+    background: #f9f9f9;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1),
+        -8px -12px 15px rgba(255, 255, 255, 0.86);
+    border-radius: 25px;
+    margin: 20px 20px;
+}
+
+.collegeCard .headerCC {
+    width: 95%;
+    height: 4em;
+    /* background-color: red; */
+    padding: 20px;
+    /* border: 1px solid #000; */
+}
+
+.headerCC .avatar img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    /* position: absolute; */
+    /* background-color: rgb(158, 111, 111); */
+}
+
+.headerCC .text {
+    /* position: absolute; */
+    width: 90%;
+    height: 3em;
+    /* background-color: turquoise; */
+    float: left;
+}
+
+.headerCC .name {
+    /* background-color: rgb(97, 57, 57); */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    /* line-height: 53px; */
+    color: #353535;
+    float: left;
+    text-align: left;
+    padding-left: 15px;
+    /* border: 1px solid #000; */
+}
+
+.headerCC .name img {
+    float: right;
+    margin-right: 20px;
+    margin-top: 5x;
+}
+
+.headerCC .details {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    /* line-height: 20px; */
+    /* border: 1px solid #000; */
+    color: #353535;
+    text-align: left;
+    float: left;
+    padding-left: 15px;
+}
+
+.headerCC .details img {
+    width: 14px;
+    margin: 0px 2px;
+}
+
+.collegeCard span {
+    font-size: 22px;
+    color: rgba(53, 53, 53, 0.3);
+}
+
+.collegeCard .bodyCC {
+    /* border: 1px solid #000; */
+    padding: 0px 30px;
+}
+
+.bodyCC .heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #353535;
+}
+
+.bodyCC .text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #353535;
+}
+
+.collegeCard .footerCC {
+    padding: 0px 30px;
+    /* border: 1px solid #000; */
+    margin: 0;
+}
+
+.collegeCard .footerCC p {
+    padding: 5px;
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #353535;
+}
+
+.footerCC button.applyButton {
+    background: linear-gradient(90deg, #EB3349 0%, #F45C43 100%);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(71, 71, 71, 0.186);
+}
+
+
+.footerCC button.applyButton:hover {
+    box-shadow: 0px 4px 4px rgba(34, 33, 33, 0.486);
+    transition: 0.5s ease-in-out;
+}
+
+.footerCC button.applyButton:focus {
+    box-shadow: 0px 4px 4px rgba(224, 224, 224, 0.486);
+    transition: 0.5s ease-in-out;
+}
+
+.SearchSection .endOfResult {
+    clear: both;
+    width: 100%;
+    height: 2em;
+    background-color: transparent;
+}

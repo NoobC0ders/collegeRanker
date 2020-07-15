@@ -32,6 +32,10 @@ a {
     top: 0;
 }
 
+.nav .activeLink {
+    font-weight: 900;
+}
+
 .nav .logo {
     width: 2em;
     height: auto;
@@ -49,7 +53,7 @@ a {
 }
 
 .nav .links {
-    width: 30em;
+    width: 32em;
     /* border: 1px solid #000; */
     margin-left: 50px;
 }
@@ -467,13 +471,7 @@ a {
         background-color: rgb(255, 255, 255);
     }
 
-    .nav .active1 {
-        background-color: rgb(245, 245, 245);
-        transform: scaleY(1);
-        transition: 1s ease-in-out;
-        color: black;
-        border-radius: 10px;
-    }
+
 
     .nav .links ul {
         margin: 0px 0px 0px 0px;
@@ -498,9 +496,8 @@ a {
         float: left;
     }
 
-    /* .nav .links li.active1 {
-        box-shadow: -5px -5px 25px rgba(133, 133, 133, 0.15);
-    } */
+
+
 
     .links li .fa {
         float: right;

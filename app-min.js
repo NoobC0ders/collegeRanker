@@ -179,3 +179,32 @@ if (hamburgers.length > 0) {
         }, false);
     });
 }
+
+
+function showFilterDegree(element, {
+    childID,
+    expand
+}) {
+
+
+    if (!expand) {
+        let onClick = `showFilterDegree(this,{childID:'${childID}',expand:true,})`;
+        element.setAttribute("onclick", onClick);
+        console.log(element.children[0].style.transform = 'rotateZ(90deg)');
+        document.getElementById(childID).style.height = "auto";
+        document.getElementById(childID).style.overflow = "visible";
+        document.getElementById(childID).style.transition = "0.5s ease-in-out";
+
+    } else {
+        let onClick = `showFilterDegree(this,{childID:'${childID}',expand:false,})`;
+        element.setAttribute("onclick", onClick);
+        console.log(element.children[0].style.transform = 'rotateZ(0deg)');
+        document.getElementById(childID).style.height = "0px";
+        document.getElementById(childID).style.overflow = "hidden";
+    }
+}
+
+showFilterDegree(document.getElementById('enggFilter'), {
+    childID: 'enggdegree',
+    expand: false
+});
