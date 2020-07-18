@@ -27,11 +27,11 @@
             <div class="logo">CR.</div>
             <div class="links" id="navLinks">
                 <ul>
-                    <a href="#">
+                    <a href="../index.html">
                         <li>Home</li>
                     </a>
                     <a href="#aboutus">
-                        <li>About us</li>
+                        <li class="activeLink">About us</li>
                     </a>
                     <a href="#">
                         <li id="collageDropDown" onclick="addNavCon('collageDropDown', {expand:false})">Colleges <i
@@ -234,20 +234,21 @@
             </div>
         </div>
     </section>
-    <section class="quickFilterSection">
-        <div>
-            <button class="trending">Trending Colleges</button>
-            <button class="top10">Top 10 Colleges of India</button>
-            <button class="bestCSE">Best Colleges for CSE</button>
-            <button class="bestME">Best Colleges for ME</button>
-            <button class="bestCE">Best Colleges for CE</button>
-            <button class="bestECE">Best Colleges for ECE</button>
-            <button class="bestEE">Best Colleges for EE</button>
 
-        </div>
-    </section>
 
     <section class="SearchSection">
+        <div class="quickFilterSection" id="quickFilter">
+            <div>
+                <button class="trending">Trending Colleges</button>
+                <button class="top10">Top 10 Colleges of India</button>
+                <button class="bestCSE">Best Colleges for CSE</button>
+                <button class="bestME">Best Colleges for ME</button>
+                <button class="bestCE">Best Colleges for CE</button>
+                <button class="bestECE">Best Colleges for ECE</button>
+                <button class="bestEE">Best Colleges for EE</button>
+
+            </div>
+        </div>
         <div class="filter">
             <div class="byDegree">
 
@@ -324,11 +325,11 @@
             <div class="byLocation">
                 <p> By Location</p>
                 <div>
-                    <input type="checkbox" id="kolkata" name="kolkata" value="ba" />
-                    <label for="kolkata">Kolkata</label><br>
+                    <input type="checkbox" id="westbengal" name="westbengal" checked value="ba" />
+                    <label for="westbengal">West Bengal</label><br>
 
                     <input type="checkbox" id="bangalore" name="bangalore" value="ma">
-                    <label for="kolkata"> Bangalore</label><br>
+                    <label for="bangalore"> Bangalore</label><br>
 
                     <input type="checkbox" id="delhi" name="delhi" value="ba">
                     <label for="delhi"> Delhi </label><br>
@@ -370,7 +371,7 @@
                     <input type="checkbox" id="orissa" name="orissa" value="ba">
                     <label for="orissa">Orissa</label><br>
                     <input type="checkbox" id="bhubneshwar" name="bhubneshwar" value="ba">
-                    <label for="bhubneshwar">Bhubneshwar</label><br>
+                    <label for="bhubneshwar">Goa</label><br>
 
 
                 </div>
@@ -386,8 +387,8 @@
                         <img src="../assets/images/icon/IITKGPIMG.png" alt="" srcset="">
                     </div>
                     <div class="text">
-                        <div class="name">Indian Institute of Technology(IIT), Kharagpur <img
-                                src="../assets/images/icon/Bookmark.svg" alt="" srcset=""></div>
+                        <div class="name"> <a href="#"> Indian Institute of Technology(IIT), Kharagpur </a>
+                            <img src="../assets/images/icon/Bookmark.svg" alt="" srcset=""></div>
                         <div class="details">
                             <i class="fas fa-map-marker-alt"></i> Kharagpur, West Bengal <span>|</span> <img
                                 src="../assets/images/icon/fullStar.png"><img
@@ -431,8 +432,8 @@
                         <img src="../assets/images/icon/IITKGPIMG.png" alt="" srcset="">
                     </div>
                     <div class="text">
-                        <div class="name">Swami Vivekananda University(SVU), Kolkata <img
-                                src="../assets/images/icon/Bookmark.svg" alt="" srcset=""></div>
+                        <div class="name"> <a href="../collage/collegeDetails.html"> Swami Vivekananda University(SVU),
+                                Kolkata </a><img src="../assets/images/icon/Bookmark.svg" alt="" srcset=""></div>
                         <div class="details">
                             <i class="fas fa-map-marker-alt"></i> Kolkata, West Bengal <span>|</span>
                             <img src="../assets/images/icon/fullStar.png">
@@ -473,8 +474,8 @@
                         <img src="../assets/images/icon/IITKGPIMG.png" alt="" srcset="">
                     </div>
                     <div class="text">
-                        <div class="name">Jadavpur University, Kolkata <img src="../assets/images/icon/Bookmark.svg"
-                                alt="" srcset=""></div>
+                        <div class="name"> <a href="#"> Jadavpur University, Kolkata </a> <img
+                                src="../assets/images/icon/Bookmark.svg" alt="" srcset=""></div>
                         <div class="details">
                             <i class="fas fa-map-marker-alt"></i> Kolkata, West Bengal <span>|</span>
                             <img src="../assets/images/icon/fullStar.png">

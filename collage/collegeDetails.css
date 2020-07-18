@@ -1,0 +1,507 @@
+a:hover {
+    color: #0d6637;
+
+}
+
+.collegeDetails {
+    min-height: 660px;
+    height: auto;
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+
+.collegeDetails .cover {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid rgb(163, 73, 73); */
+}
+
+.collegeDetails .cover img {
+    width: 100%;
+}
+
+.collegeDetails .displayImage {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    top: 120px;
+    left: 100px;
+}
+
+
+
+.headerCD {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    /* border: 1px solid #000; */
+
+}
+
+
+.text {
+    /* position: absolute; */
+    width: 90%;
+    position: absolute;
+    height: 3em;
+    left: 380px;
+    /* background-color: turquoise; */
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.applyButton {
+    position: absolute;
+    top: 390px;
+    left: 395px;
+    background: linear-gradient(90deg, #EB3349 0%, #F45C43 100%);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(71, 71, 71, 0.186);
+}
+
+.name {
+    /* background-color: rgb(97, 57, 57); */
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    /* line-height: 53px; */
+    color: #353535;
+    float: left;
+    text-align: left;
+    padding: 5px 15px;
+    /* border: 1px solid #000; */
+}
+
+.name img {
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.details {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    /* line-height: 20px; */
+    /* border: 1px solid #000; */
+    color: #353535;
+    text-align: left;
+    float: left;
+    padding: 10px 15px;
+}
+
+.details img {
+    width: 14px;
+    margin: 0px 2px;
+}
+
+.collegeCard span {
+    font-size: 22px;
+    color: rgba(53, 53, 53, 0.3);
+}
+
+.bodyCD {
+    position: relative;
+    height: 2800px;
+    /* border: 1px solid #000; */
+}
+
+p.headline {
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: #353535;
+    /* border: 1px solid #000; */
+    padding: 0px 10px;
+    margin-left: 90px;
+}
+
+p.OverviewText {
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 90px;
+    /* border: 1px solid #000; */
+    color: #353535;
+
+}
+
+
+
+
+.sisterColleges {
+    background: #F9F9F9;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1), -8px -12px 15px rgba(255, 255, 255, 0.86);
+    border-radius: 10px;
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    top: 0px;
+    right: 100px;
+    /* border: 1px solid #000; */
+}
+
+.sisterColleges .heading {
+    padding: 0px 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #353535;
+}
+
+.sisterColleges li {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #353535;
+    padding: 5px 30px 5px 10px;
+    /* border: 1px solid #000; */
+
+}
+
+
+
+.recentCard {
+    background: #F9F9F9;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1), -8px -12px 15px rgba(255, 255, 255, 0.86);
+    border-radius: 10px;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    top: 400px;
+    right: 100px;
+    /* border: 1px solid #000; */
+}
+
+.recentCard .heading {
+    padding: 0px 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #353535;
+}
+
+.recentCard li {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #353535;
+    padding: 5px 30px 5px 10px;
+    /* border: 1px solid #000; */
+
+}
+
+
+.courses {
+    width: 60%;
+    height: 600px;
+    min-height: 300px;
+    margin: 20px 0px 0px 100px;
+}
+
+.courses .headling {
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: #353535;
+    /* border: 1px solid #000; */
+    padding: 10px 0px;
+    margin-left: 0px;
+}
+
+.courses div {
+    width: auto;
+    height: auto;
+    /* border: 1px solid red; */
+    float: left;
+    margin: 30px 50px;
+}
+
+.courses div img {
+    width: 160px;
+    /* border: 1px solid #000; */
+}
+
+.courses div p {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #353535;
+    /* border: 1px solid #000; */
+    margin: 0;
+    padding: 5px 0px;
+
+}
+
+
+
+
+
+.onlineCourses {
+    width: 100%;
+    height: 400px;
+    min-height: 300px;
+    margin: 50px 0px 0px 100px;
+}
+
+.onlineCourses .headling {
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: #353535;
+    /* border: 1px solid #000; */
+    padding: 10px 0px;
+    margin-left: 0px;
+}
+
+.onlineCourses div {
+    width: 160px;
+    height: auto;
+    /* border: 1px solid red; */
+    float: left;
+    margin: 30px 30px;
+    background: #ECECEC;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.onlineCourses div img {
+    width: 140px;
+    margin-left: 10px;
+    /* border: 1px solid #000; */
+}
+
+.onlineCourses div p {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #353535;
+    /* border: 1px solid #000; */
+    margin: 0;
+    padding: 5px 0px;
+
+}
+
+
+.newsCard {
+    background: #F9F9F9;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1), -8px -12px 15px rgba(255, 255, 255, 0.86);
+    border-radius: 10px;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    top: 1500px;
+    right: 100px;
+    /* border: 1px solid #000; */
+}
+
+.newsCard .heading {
+    padding: 0px 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #353535;
+}
+
+.newsCard li {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #353535;
+    padding: 5px 30px 5px 10px;
+    /* border: 1px solid #000; */
+}
+
+
+.recommend {
+    /* background: #F9F9F9; */
+    /* box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1), -8px -12px 15px rgba(255, 255, 255, 0.86); */
+    border-radius: 10px;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    top: 2100px;
+    right: 100px;
+    /* border: 1px solid #000; */
+}
+
+.recommend .heading {
+    padding: 0px 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #353535;
+}
+
+.recommend li {
+    list-style-type: square;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #353535;
+    padding: 5px 30px 5px 10px;
+    /* border: 1px solid #000; */
+
+}
+
+
+
+
+
+.facilities {
+    width: 60%;
+    height: 650px;
+    min-height: 300px;
+    margin: 100px 0px 0px 100px;
+    /* border: 1px solid #000; */
+}
+
+.facilities .headling {
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: #353535;
+    /* border: 1px solid #000; */
+    padding: 10px 0px;
+    margin-left: 0px;
+}
+
+.facilities div {
+    width: auto;
+    height: auto;
+    /* border: 1px solid red; */
+    float: left;
+    margin: 30px 50px;
+}
+
+.facilities div img {
+    width: 160px;
+    /* border: 1px solid #000; */
+}
+
+.facilities div p {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #353535;
+    /* border: 1px solid #000; */
+    margin: 0;
+    padding: 5px 0px;
+
+}
+
+
+
+
+
+.placement {
+    width: 60%;
+    height: 700px;
+    min-height: 300px;
+    margin: 0px 0px 0px 100px;
+    /* border: 1px solid #000; */
+}
+
+.placement .headling {
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: #353535;
+    /* border: 1px solid #000; */
+    padding: 10px 0px;
+    margin-left: 0px;
+}
+
+.placement div {
+    width: auto;
+    height: auto;
+    /* border: 1px solid red; */
+    float: left;
+    margin: 30px 50px;
+}
+
+.placement div img {
+    width: 160px;
+    /* border: 1px solid #000; */
+}
+
+.placement div p {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #353535;
+    /* border: 1px solid #000; */
+    margin: 0;
+    padding: 5px 0px;
+
+}
+
+.placement .more {
+    clear: both;
+    width: 80%;
+    text-align: center;
+    background-color: #f7f7f7;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px 0px;
+    line-height: 35px;
+    text-align: center;
+    color: #353535;
+    cursor: pointer;
+}
