@@ -1,5 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400,900;1,500&display=swap");
 
+
+
+
+/*
+@media screen and (max-width: 840px) {
+
+
+  .serviceSection {
+    display: block;
+  }
+
+  .growthSection {
+    display: none;
+  }
+
+  .profitSection {
+    display: none;
+  }
+
+  .testimonial {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .serviceSection {
+    display: none;
+  }
+} */
+
 body {
   padding: 0;
   margin: 0;
@@ -160,7 +192,7 @@ body {
   top: 0px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 200px;
   line-height: 234px;
   text-align: right;
@@ -326,25 +358,15 @@ body {
 
 /**************** media query for android 360 X 640 (min:320 max:390) ******************/
 
-@media screen and (max-width: 420px) {
-  .topnav .logo {
-    width: 49px;
-    height: 35px;
-    left: 4px;
-    font-size: 30px;
-    margin-left: 20px;
-  }
+@media screen and (max-width: 680px) {
 
-  .topnav .signBtn {
-    margin: 10px 30px 10px 50px;
-    background-color: #48fa9a;
-    text-align: center;
-    padding: 8px 16px;
-  }
+
+
 
   .heroSection {
     width: 100%;
     height: 450px;
+    margin-top: 20px;
   }
 
   .heroSection .headline {
@@ -596,7 +618,8 @@ body {
 
 .profitSection .content {
   position: absolute;
-  width: 728px;
+  width: 720px;
+  /* border: 1px solid #000; */
   height: 280px;
   right: 100px;
   top: 12rem;
@@ -658,6 +681,10 @@ body {
   font-size: 75px;
   line-height: 88px;
   color: #353535;
+}
+
+.testimonial .review {
+  display: none;
 }
 
 .testimonial .tcard {
@@ -743,7 +770,329 @@ body {
   color: #353535;
 }
 
+
+
+/********* FROM SERVICE SECTION TO TESTIMONIAL FOR MOBILE******************/
+
+
+@media screen and (max-width: 680px) {
+
+  .serviceSection {
+    clear: both;
+    margin-top: 500px;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid #000; */
+    padding-top: 20px;
+  }
+
+  .serviceSection .heading {
+    width: 100%;
+    height: 59px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 59px;
+    text-align: center;
+    color: #353535;
+  }
+
+  .serviceSection .serviceWatermark {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0px;
+    left: 0;
+    top: 14rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+
+  }
+
+  .serviceSection img {
+    position: absolute;
+    top: 10em;
+    width: 200px;
+    /* border: 1px solid #000; */
+    left: 20%;
+    top: 80px;
+
+
+  }
+
+  .serviceSection .content {
+    position: absolute;
+    width: 320px;
+    height: 210px;
+    right: 0em;
+    left: 20px;
+    top: 20rem;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .serviceSection b {
+    font-weight: 500;
+  }
+
+  .growthSection {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 660px;
+    margin-top: 20px;
+    /* border: 1px solid #000; */
+    padding-top: 0px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .growthSection .growthWatermark {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0px;
+    left: 0;
+    top: 10rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .growthSection .content {
+    position: absolute;
+    width: 320px;
+    height: 280px;
+    left: 20px;
+    top: 16rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    color: #000000;
+  }
+
+  .growthSection b {
+    font-weight: 500;
+  }
+
+  .growthSection img {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    /* border: 1px solid #000; */
+    left: 12%;
+    top: 0px;
+
+  }
+
+  .profitSection {
+    position: relative;
+    width: 100%;
+    height: 640px;
+    /* border: 1px solid #000; */
+    margin-top: 20px;
+    /* padding-top: 20px; */
+    font-family: "Roboto", sans-serif;
+    /* display: non e; */
+  }
+
+  .profitSection .profitWatermark {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0px;
+    left: 0;
+    top: 10rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .profitSection .content {
+    position: absolute;
+    width: 320px;
+    height: 350px;
+    left: 20px;
+    top: 16rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    color: #000000;
+  }
+
+  .profitSection img {
+    margin: 0;
+    position: absolute;
+    width: 260px;
+    height: auto;
+    /* border: 1px solid #000; */
+    left: 24%;
+    top: 20px;
+
+  }
+
+  .profitSection b {
+    font-weight: 500;
+  }
+
+
+
+  .testimonial {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    /* border: 1px solid #000; */
+    margin-top: 40px;
+    padding-top: 2px;
+    font-family: "Roboto", sans-serif;
+    background-image: none;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    /* background-size: 160% 100%; */
+
+  }
+
+
+  .testimonial .watermark {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    right: 80px;
+    bottom: 90px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .testimonial .headline {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 23%;
+    top: 45px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #353535;
+    /* border: 1px solid #000; */
+    /* display: none; */
+  }
+
+  .testimonial .review {
+    width: 320px;
+    left: 5%;
+    display: block;
+    position: absolute;
+    top: 6em;
+
+
+  }
+
+  .testimonial .tcard {
+    display: none;
+  }
+
+
+  .tcard .header {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 2em;
+    /* border: 3px solid #000; */
+  }
+
+  .tcard .avatar {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -15px;
+    left: 0em;
+    /* background: #C4C4C4; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); */
+    border-radius: 100px;
+    padding: 10px;
+  }
+
+
+  .tcard .name {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2em;
+    text-align: left;
+    padding-left: 5em;
+    height: 23px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    /* border: 1px solid #000; */
+    color: #333355;
+  }
+
+  .tcard .content {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+  }
+
+  .content .quoteOpen {
+    position: absolute;
+    left: 2em;
+    top: 6em;
+    margin: 0;
+  }
+
+  .content .quoteClose {
+    position: absolute;
+    left: 22em;
+    top: 17em;
+    margin: 0;
+  }
+
+
+  .tcard .post {
+    position: relative;
+    width: 400px;
+    height: 184px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    padding-left: 5em;
+    color: #353535;
+  }
+
+
+}
+
+
+
 .contact {
+
+
   position: relative;
   width: 100%;
   height: 1006px;
@@ -963,11 +1312,163 @@ textarea:focus {
   color: #000000;
 }
 
+/********* contact FOR MOBILE******************/
+
+
+@media screen and (max-width: 680px) {
+
+
+  .contact {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    padding-top: 40px;
+    background-image: none;
+    border: 1px solid #000;
+  }
+
+  .contact .watermark {
+    width: 100%;
+    height: auto;
+    font-size: 60px;
+    line-height: 0px;
+    text-align: center;
+    right: 0px;
+
+  }
+
+  .contact .text {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    /* border: 1px solid #000; */
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+    top: 30px;
+    left: 0px;
+    text-align: center;
+
+  }
+
+
+
+  .contact .contactCard {
+    position: absolute;
+    width: 90%;
+    right: 20px;
+    height: 700px;
+    top: 240px;
+    background: #F8F8F8;
+    box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.15), -5px -5px 12px rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    /* border: 1px solid #000; */
+  }
+
+  .contactCard .heading {
+    width: 100%;
+    height: 45px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 41px;
+    font-weight: bold;
+    /* border: 1px solid #000; */
+    padding: 30px 0px 0px 30px;
+    color: #353535;
+  }
+
+  .contactCard p {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 0px 0px 0px 30px;
+    color: #353535;
+    margin: 0;
+
+  }
+
+  .contactCard .input {
+    position: relative;
+    width: 85%;
+    height: auto;
+    margin: 20px 0px;
+
+    /* border: 1px solid #000; */
+  }
+
+  .contactCard .input p {
+    padding: 5px 20px;
+    margin-left: 40px;
+    width: 100px;
+    font-size: 16px;
+    /* border: 1px solid #000; */
+  }
+
+
+  .contactCard .sendBtn {
+    /* border: 1px solid #000; */
+    width: 120px;
+    text-align: center;
+    padding: 20px 10px;
+    background: #A3FFCD;
+    border-radius: 32px;
+    margin: 40px 0px 0px 30px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 10px;
+    color: #353535;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(128, 127, 127, 0.2);
+
+  }
+
+
+  .contact .otherContact {
+    width: 100%;
+    height: 260px;
+    bottom: 100px;
+    top: 50em;
+    left: 20px;
+    font-size: 20px;
+  }
+
+  .contact .heading {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+
+
+  .contact .otherContact .iconify {
+    font-size: 24px;
+  }
+
+  .otherContact .texts {
+    font-size: 18px;
+  }
+
+
+
+
+}
+
+/************************************************/
 footer {
   width: 100%;
   height: auto;
   background: #E3FFF0;
-  display: block;
+
 }
 
 footer .hero {
@@ -1074,32 +1575,95 @@ footer .copyright1 {
   color: #353535;
 }
 
+/********* footer FOR MOBILE******************/
 
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 680px) {
 
-
-  .serviceSection {
-    display: none;
+  footer {
+    width: 100%;
+    height: auto;
+    background: #E3FFF0;
+    display: block;
+    margin-top: 50px;
+    padding: 0px;
   }
 
-  .growthSection {
-    display: none;
+  footer .hero {
+    width: 239px;
+    height: auto;
+    margin: 20px 10px 10px 20px;
+    padding-top: 10px;
+    float: left;
+    /* border: 1px solid #000; */
   }
 
-  .profitSection {
-    display: none;
+
+
+  footer .product,
+  .legals {
+    width: 70%;
+    float: left;
+    /* border: 1px solid #000; */
+    padding: 0px 0px;
+    margin: 0px 20px 20px 20px;
   }
 
-  .testimonial {
-    display: none;
+  footer .location {
+    width: 50%;
+    padding: 0px 0px;
+    margin: 10px 20px;
+    /* border: 1px solid #000; */
+    float: left;
+
   }
 
-  .contact {
-    display: none;
+  footer h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 510;
+    font-size: 22px;
+    line-height: 0px;
+    /* identical to box height */
+
+
   }
 
-  .serviceSection {
-    display: none;
+  footer ul {
+    display: block;
+    padding: 0;
+    margin: 0;
   }
+
+  footer li {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0px 10px;
+    margin: 0;
+    /* border: 1px soli  d #000; */
+
+  }
+
+
+  .location .map {
+    background-image: url('./assets/images/map.svg');
+    width: 233px;
+    height: 227px;
+    background-repeat: no-repeat;
+  }
+
+  footer .copyright1 {
+    /* position: absolute; */
+    margin: 0px 0px 30px 0px;
+    width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+    border-top: 1px solid rgba(53, 53, 53, 0.2);
+
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #353535;
+  }
+
 }
