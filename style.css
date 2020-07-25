@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400,900;1,500&display=swap");
 
-
-
-
 /*
 @media screen and (max-width: 840px) {
 
@@ -40,8 +37,6 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
-
 
 .heroSection {
   position: relative;
@@ -359,10 +354,6 @@ body {
 /**************** media query for android 360 X 640 (min:320 max:390) ******************/
 
 @media screen and (max-width: 680px) {
-
-
-
-
   .heroSection {
     width: 100%;
     height: 450px;
@@ -589,7 +580,6 @@ body {
   right: 50px;
   top: 0em;
   /* border: 1px solid #000; */
-
 }
 
 .profitSection {
@@ -641,20 +631,16 @@ body {
   font-weight: 500;
 }
 
-
-
 .testimonial {
   position: relative;
   width: 100%;
   height: 795px;
   left: 0px;
   /* border: 1px solid #000; */
-  background-image: url('./assets/images/bg/Backdrop.svg');
+  background-image: url("./assets/images/bg/Backdrop.svg");
   background-repeat: no-repeat;
   /* background-size: 160% 100%; */
-
 }
-
 
 .testimonial .watermark {
   position: relative;
@@ -692,11 +678,11 @@ body {
   width: 579px;
   height: 353px;
   right: 100px;
-  background: #F8F8F8;
-  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1), -5px -10px 15px rgba(255, 255, 255, 0.86);
+  background: #f8f8f8;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1),
+    -5px -10px 15px rgba(255, 255, 255, 0.86);
   border-radius: 25px;
 }
-
 
 .tcard .header {
   position: relative;
@@ -718,7 +704,6 @@ body {
   border-radius: 100px;
   padding: 10px;
 }
-
 
 .tcard .name {
   position: relative;
@@ -756,7 +741,6 @@ body {
   margin: 0;
 }
 
-
 .tcard .post {
   position: relative;
   width: 400px;
@@ -770,13 +754,9 @@ body {
   color: #353535;
 }
 
-
-
 /********* FROM SERVICE SECTION TO TESTIMONIAL FOR MOBILE******************/
 
-
 @media screen and (max-width: 680px) {
-
   .serviceSection {
     clear: both;
     margin-top: 500px;
@@ -811,7 +791,6 @@ body {
     font-weight: 500;
     font-size: 80px;
     text-align: center;
-
   }
 
   .serviceSection img {
@@ -821,8 +800,6 @@ body {
     /* border: 1px solid #000; */
     left: 20%;
     top: 80px;
-
-
   }
 
   .serviceSection .content {
@@ -892,7 +869,6 @@ body {
     /* border: 1px solid #000; */
     left: 12%;
     top: 0px;
-
   }
 
   .profitSection {
@@ -943,14 +919,11 @@ body {
     /* border: 1px solid #000; */
     left: 24%;
     top: 20px;
-
   }
 
   .profitSection b {
     font-weight: 500;
   }
-
-
 
   .testimonial {
     position: relative;
@@ -964,9 +937,7 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     /* background-size: 160% 100%; */
-
   }
-
 
   .testimonial .watermark {
     position: relative;
@@ -1004,14 +975,11 @@ body {
     display: block;
     position: absolute;
     top: 6em;
-
-
   }
 
   .testimonial .tcard {
     display: none;
   }
-
 
   .tcard .header {
     position: relative;
@@ -1033,7 +1001,6 @@ body {
     border-radius: 100px;
     padding: 10px;
   }
-
 
   .tcard .name {
     position: relative;
@@ -1071,7 +1038,6 @@ body {
     margin: 0;
   }
 
-
   .tcard .post {
     position: relative;
     width: 400px;
@@ -1084,19 +1050,13 @@ body {
     padding-left: 5em;
     color: #353535;
   }
-
-
 }
 
-
-
 .contact {
-
-
   position: relative;
   width: 100%;
   height: 1006px;
-  background-image: url('./assets/images/bg/GreenStage.svg');
+  background-image: url("./assets/images/bg/GreenStage.svg");
   background-repeat: no-repeat;
 }
 
@@ -1115,7 +1075,6 @@ body {
 }
 
 .contact .text {
-
   position: absolute;
   width: 483px;
   height: 419px;
@@ -1135,8 +1094,9 @@ body {
   right: 100px;
   height: 750px;
   top: 150px;
-  background: #F8F8F8;
-  box-shadow: 5px 5px 17px rgba(0, 0, 0, 0.15), -5px -5px 12px rgba(255, 255, 255, 0.2);
+  background: #f8f8f8;
+  box-shadow: 5px 5px 17px rgba(0, 0, 0, 0.15),
+    -5px -5px 12px rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   /* border: 1px solid #000; */
 }
@@ -1167,7 +1127,6 @@ body {
   padding: 0px 0px 0px 30px;
   color: #353535;
   margin: 0;
-
 }
 
 .contactCard .input {
@@ -1191,12 +1150,13 @@ body {
   color: red;
 }
 
-.contactCard input[type='text'],
-input[type='email'] {
+.contactCard input[type="text"],
+input[type="email"] {
   width: 75%;
   height: auto;
-  background: #F8F8F8;
-  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.05), -5px -10px 15px rgba(255, 255, 255, 0.86);
+  background: #f8f8f8;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.05),
+    -5px -10px 15px rgba(255, 255, 255, 0.86);
   border-radius: 45px;
   outline: none;
   border: none;
@@ -1204,13 +1164,11 @@ input[type='email'] {
   padding: 20px 30px;
 }
 
-.contact input[type='text']::-webkit-input-placeholder,
-input[type='email']::-webkit-input-placeholder,
+.contact input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   opacity: 0.3;
 }
-
-
 
 .contactCard textarea {
   width: 75%;
@@ -1220,16 +1178,18 @@ textarea::-webkit-input-placeholder {
   margin-left: 30px;
   padding: 20px 30px;
   font-family: "Roboto", sans-serif;
-  background: #F8F8F8;
-  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.05), -5px -10px 15px rgba(255, 255, 255, 0.86);
+  background: #f8f8f8;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.05),
+    -5px -10px 15px rgba(255, 255, 255, 0.86);
   border-radius: 14px;
   resize: none;
 }
 
-.contactCard input[type='text']:focus,
-input[type='email']:focus,
+.contactCard input[type="text"]:focus,
+input[type="email"]:focus,
 textarea:focus {
-  box-shadow: inset 5px 10px 15px rgba(0, 0, 0, 0.05), inset -5px -10px 15px rgba(255, 255, 255, 0.86);
+  box-shadow: inset 5px 10px 15px rgba(0, 0, 0, 0.05),
+    inset -5px -10px 15px rgba(255, 255, 255, 0.86);
 }
 
 .contactCard .sendBtn {
@@ -1237,7 +1197,7 @@ textarea:focus {
   width: 135px;
   text-align: center;
   padding: 20px 10px;
-  background: #A3FFCD;
+  background: #a3ffcd;
   border-radius: 32px;
   margin: 40px 0px 0px 30px;
   font-family: "Roboto", sans-serif;
@@ -1248,7 +1208,6 @@ textarea:focus {
   color: #353535;
   cursor: pointer;
   box-shadow: 5px 5px 5px rgba(128, 127, 127, 0.2);
-
 }
 
 .contactCard .sendBtn:hover {
@@ -1269,11 +1228,9 @@ textarea:focus {
   line-height: 23px;
 
   color: #000000;
-
 }
 
 .contact .heading {
-
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1288,11 +1245,10 @@ textarea:focus {
   padding: 0px 0px 0px 15px;
   margin: 0px;
   /* border: 1px solid #000; */
-
 }
 
 .contact .otherContact .iconify {
-  color: #6AAF89;
+  color: #6aaf89;
   font-size: 32px;
   /* border: 1px solid #000; */
 }
@@ -1314,17 +1270,14 @@ textarea:focus {
 
 /********* contact FOR MOBILE******************/
 
-
 @media screen and (max-width: 680px) {
-
-
   .contact {
     position: relative;
     width: 100%;
     height: 1200px;
     padding-top: 40px;
     background-image: none;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   }
 
   .contact .watermark {
@@ -1334,7 +1287,6 @@ textarea:focus {
     line-height: 0px;
     text-align: center;
     right: 0px;
-
   }
 
   .contact .text {
@@ -1350,10 +1302,7 @@ textarea:focus {
     top: 30px;
     left: 0px;
     text-align: center;
-
   }
-
-
 
   .contact .contactCard {
     position: absolute;
@@ -1361,8 +1310,9 @@ textarea:focus {
     right: 20px;
     height: 700px;
     top: 240px;
-    background: #F8F8F8;
-    box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.15), -5px -5px 12px rgba(255, 255, 255, 0.2);
+    background: #f8f8f8;
+    box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.15),
+      -5px -5px 12px rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     /* border: 1px solid #000; */
   }
@@ -1393,7 +1343,6 @@ textarea:focus {
     padding: 0px 0px 0px 30px;
     color: #353535;
     margin: 0;
-
   }
 
   .contactCard .input {
@@ -1413,13 +1362,12 @@ textarea:focus {
     /* border: 1px solid #000; */
   }
 
-
   .contactCard .sendBtn {
     /* border: 1px solid #000; */
     width: 120px;
     text-align: center;
     padding: 20px 10px;
-    background: #A3FFCD;
+    background: #a3ffcd;
     border-radius: 32px;
     margin: 40px 0px 0px 30px;
     font-family: "Roboto", sans-serif;
@@ -1430,9 +1378,7 @@ textarea:focus {
     color: #353535;
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(128, 127, 127, 0.2);
-
   }
-
 
   .contact .otherContact {
     width: 100%;
@@ -1448,8 +1394,6 @@ textarea:focus {
     line-height: 25px;
   }
 
-
-
   .contact .otherContact .iconify {
     font-size: 24px;
   }
@@ -1457,18 +1401,13 @@ textarea:focus {
   .otherContact .texts {
     font-size: 18px;
   }
-
-
-
-
 }
 
 /************************************************/
 footer {
   width: 100%;
   height: auto;
-  background: #E3FFF0;
-
+  background: #e3fff0;
 }
 
 footer .hero {
@@ -1477,7 +1416,6 @@ footer .hero {
   margin: 25px 10px 10px 100px;
   padding-top: 10px;
   float: left;
-
 }
 
 footer .hero .logo {
@@ -1490,7 +1428,6 @@ footer .hero .logo {
 }
 
 footer .hero p {
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -1520,8 +1457,6 @@ footer h3 {
   font-size: 22px;
   line-height: 23px;
   /* identical to box height */
-
-
 }
 
 footer li {
@@ -1550,7 +1485,7 @@ footer a:hover {
 }
 
 .location .map {
-  background-image: url('./assets/images/map.svg');
+  background-image: url("./assets/images/map.svg");
   width: 233px;
   height: 227px;
   background-repeat: no-repeat;
@@ -1571,19 +1506,16 @@ footer .copyright1 {
   line-height: 21px;
   /* identical to box height */
 
-
   color: #353535;
 }
 
 /********* footer FOR MOBILE******************/
 
-
 @media screen and (max-width: 680px) {
-
   footer {
     width: 100%;
     height: auto;
-    background: #E3FFF0;
+    background: #e3fff0;
     display: block;
     margin-top: 50px;
     padding: 0px;
@@ -1597,8 +1529,6 @@ footer .copyright1 {
     float: left;
     /* border: 1px solid #000; */
   }
-
-
 
   footer .product,
   .legals {
@@ -1615,7 +1545,6 @@ footer .copyright1 {
     margin: 10px 20px;
     /* border: 1px solid #000; */
     float: left;
-
   }
 
   footer h3 {
@@ -1625,8 +1554,6 @@ footer .copyright1 {
     font-size: 22px;
     line-height: 0px;
     /* identical to box height */
-
-
   }
 
   footer ul {
@@ -1641,12 +1568,10 @@ footer .copyright1 {
     padding: 0px 10px;
     margin: 0;
     /* border: 1px soli  d #000; */
-
   }
 
-
   .location .map {
-    background-image: url('./assets/images/map.svg');
+    background-image: url("./assets/images/map.svg");
     width: 233px;
     height: 227px;
     background-repeat: no-repeat;
@@ -1665,5 +1590,4 @@ footer .copyright1 {
 
     color: #353535;
   }
-
 }
