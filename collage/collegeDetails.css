@@ -273,6 +273,7 @@ p.OverviewText {
     width: 100%;
     height: 400px;
     min-height: 300px;
+    /* border: 1px solid #000; */
     margin: 50px 0px 0px 100px;
 }
 
@@ -282,7 +283,7 @@ p.OverviewText {
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
-    line-height: 41px;
+    line-height: auto;
     color: #353535;
     /* border: 1px solid #000; */
     padding: 10px 0px;
@@ -294,7 +295,7 @@ p.OverviewText {
     height: auto;
     /* border: 1px solid red; */
     float: left;
-    margin: 30px 30px;
+    margin: 0px 30px 20px 30px;
     background: #ECECEC;
     border-radius: 10px;
     padding: 40px 20px;
@@ -318,6 +319,28 @@ p.OverviewText {
     margin: 0;
     padding: 5px 0px;
 
+}
+
+.onlineCourses .scrollH {
+    white-space: nowrap;
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 290px;
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.onlineCourses .scrollH::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -504,4 +527,535 @@ p.OverviewText {
     text-align: center;
     color: #353535;
     cursor: pointer;
+}
+
+.clearBoth {
+    clear: both;
+    width: 100%;
+    height: 2px;
+    background-color: darkblue;
+}
+
+
+@media screen and (max-width:660px) {
+
+
+    .collegeDetails {
+        min-height: 80%;
+        height: auto;
+        width: 100%;
+        /* border: 1px solid #000; */
+    }
+
+    .collegeDetails .cover {
+        width: auto;
+        height: auto;
+        /* border: 1px solid rgb(163, 73, 73); */
+        margin: 0;
+    }
+
+    .collegeDetails .cover img {
+        width: auto;
+        background-position: centers;
+        background-size: cover;
+
+    }
+
+
+
+    .collegeDetails .displayImage {
+        position: absolute;
+        top: 320px;
+        left: 20px;
+
+    }
+
+    .collegeDetails .displayImage img {
+        width: 100px;
+
+    }
+
+
+    .headerCD {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        /* border: 1px solid #000; */
+
+    }
+
+
+    .text {
+        /* position: absolute; */
+        width: 300px;
+        position: relative;
+        height: 3em;
+        left: 100px;
+        margin-top: 0px;
+        /* background-color: turquoise; */
+        float: left;
+        text-align: left;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: initial;
+    }
+
+    .applyButton {
+        position: absolute;
+        top: 500px;
+        left: 20px;
+        padding: 8px 10px;
+        font-size: 16px;
+
+    }
+
+    .name {
+        width: 60%;
+        font-size: 18px;
+        color: #353535;
+        float: left;
+        text-align: left;
+        padding: 5px 20px;
+        /* border: 1px solid #000; */
+    }
+
+    .name img {
+
+        display: none;
+    }
+
+    .details {
+        position: absolute;
+        width: 240px;
+        top: 80px;
+        left: -90px;
+        font-size: 12px;
+        /* border: 1px solid #000; */
+
+
+    }
+
+    .details img {
+        width: 14px;
+        margin: 0px 2px;
+    }
+
+    .collegeCard span {
+        font-size: 22px;
+        color: rgba(53, 53, 53, 0.3);
+    }
+
+    .bodyCD {
+        position: relative;
+        height: auto;
+        /* border: 1px solid #000; */
+    }
+
+    .bodyCD p {
+        margin: 0;
+    }
+
+    p.headline {
+        width: 60%;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 41px;
+        color: #353535;
+        /* border: 1px solid #000; */
+        margin-top: 80px;
+        padding: 0px 0px;
+        margin-left: 20px;
+    }
+
+    p.OverviewText {
+        width: 80%;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-left: 20px;
+        /* border: 1px solid #000; */
+        color: #353535;
+
+    }
+
+
+
+
+    .sisterColleges {
+        /* display: none; */
+        background: #F9F9F9;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1), -8px -12px 15px rgba(255, 255, 255, 0.86);
+        border-radius: 10px;
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 20px;
+        right: 0px;
+        padding: 10px;
+        /* border: 1px solid #000; */
+    }
+
+    .sisterColleges .heading {
+        padding: 10px 20px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: #353535;
+    }
+
+    .sisterColleges li {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        color: #353535;
+        padding: 5px 30px 5px 10px;
+        /* border: 1px solid #000; */
+
+    }
+
+
+
+    .recentCard {
+        display: none;
+
+        background: #F9F9F9;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1), -8px -12px 15px rgba(255, 255, 255, 0.86);
+        border-radius: 10px;
+        position: absolute;
+        width: 350px;
+        height: 500px;
+        top: 400px;
+        right: 100px;
+        /* border: 1px solid #000; */
+    }
+
+    .recentCard .heading {
+        padding: 0px 20px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: #353535;
+    }
+
+    .recentCard li {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        color: #353535;
+        padding: 5px 30px 5px 10px;
+        /* border: 1px solid #000; */
+
+    }
+
+
+    .courses {
+        width: 90%;
+        height: 360px;
+        min-height: 300px;
+        margin: 50px 0px 0px 20px;
+        /* border: 1px solid #000; */
+    }
+
+    .courses .headling {
+        width: 0%;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 0px;
+        color: #353535;
+        /* border: 1px solid #000; */
+        padding: 10px 0px;
+        margin-left: 0px;
+    }
+
+    .courses div {
+        width: auto;
+        height: 120px;
+        /* border: 1px solid red; */
+        float: left;
+        margin: 20px 10px;
+    }
+
+    .courses div img {
+        width: 80px;
+        /* border: 1px solid #000; */
+    }
+
+    .courses div p {
+        width: 80px;
+        font-size: 16px;
+        /* border: 1px solid #000; */
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+
+
+
+    .onlineCourses {
+        /* display: none; */
+        width: 90%;
+        height: 400px;
+        min-height: 300px;
+        margin: 20px 0px 0px 20px;
+        /* border: 1px solid #000; */
+    }
+
+
+
+    .onlineCourses .headling {
+        width: 60%;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30px;
+        color: #353535;
+        /* border: 1px solid #000; */
+        padding: 10px 0px;
+        margin-left: 0px;
+    }
+
+    .onlineCourses div {
+        width: auto;
+        height: 150px;
+        /* border: 1px solid red; */
+        float: left;
+        margin: 20px 10px;
+    }
+
+    .onlineCourses div img {
+        width: 120px;
+        /* border: 1px solid #000; */
+        margin: 0;
+    }
+
+    .onlineCourses div p {
+        width: 100%;
+        font-size: 16px;
+        /* border: 1px solid #000; */
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .onlineCourses .scrollH {
+        white-space: nowrap;
+        display: flex;
+        width: 100%;
+        overflow: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 290px;
+        border: none;
+        background: transparent;
+        margin: 0;
+        padding: 0;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .onlineCourses .scrollH::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .newsCard {
+        display: none;
+
+        background: #F9F9F9;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1), -8px -12px 15px rgba(255, 255, 255, 0.86);
+        border-radius: 10px;
+        position: absolute;
+        width: 350px;
+        height: 500px;
+        top: 1500px;
+        right: 100px;
+        /* border: 1px solid #000; */
+    }
+
+    .newsCard .heading {
+        padding: 0px 20px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: #353535;
+    }
+
+    .newsCard li {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        color: #353535;
+        padding: 5px 30px 5px 10px;
+        /* border: 1px solid #000; */
+    }
+
+
+    .recommend {
+        display: none;
+
+        /* background: #F9F9F9; */
+        /* box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1), -8px -12px 15px rgba(255, 255, 255, 0.86); */
+        border-radius: 10px;
+        position: absolute;
+        width: 350px;
+        height: 500px;
+        top: 2100px;
+        right: 100px;
+        /* border: 1px solid #000; */
+    }
+
+    .recommend .heading {
+        padding: 0px 20px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: #353535;
+    }
+
+    .recommend li {
+        list-style-type: square;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        color: #353535;
+        padding: 5px 30px 5px 10px;
+        /* border: 1px solid #000; */
+
+    }
+
+
+
+
+
+
+    .facilities {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        max-height: 800px;
+        margin: 40px 0px 0px 20px;
+        /* border: 1px solid rgb(36, 187, 56); */
+    }
+
+    .facilities .headling {
+        width: 100%;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 0px;
+        color: #353535;
+        /* border: 1px solid #000; */
+        padding: 10px 0px;
+        margin-left: 0px;
+    }
+
+    .facilities div {
+        width: auto;
+        height: 120px;
+        /* border: 1px solid red; */
+        float: left;
+        margin: 20px 10px;
+    }
+
+    .facilities div img {
+        width: 80px;
+        /* border: 1px solid #000; */
+    }
+
+    .facilities div p {
+        width: 80px;
+        font-size: 16px;
+        /* border: 1px solid #000; */
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .clearBoth {
+        clear: both;
+        width: 100%;
+        height: 2px;
+        background-color: darkblue;
+    }
+
+
+
+
+
+
+    .placement {
+        position: relative;
+        width: 100%;
+        max-height: 500px;
+        height: 350px;
+        margin: 50px 0px 0px 20px;
+        /* border: 1px solid #000; */
+    }
+
+    .placement .headling {
+        width: 100%;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 0px;
+        color: #353535;
+        /* border: 1px solid #000; */
+        padding: 10px 0px;
+        margin-left: 0px;
+    }
+
+    .placement div {
+        width: auto;
+        height: 120px;
+        /* border: 1px solid red; */
+        float: left;
+        margin: 20px 10px;
+        text-align: center;
+    }
+
+    .placement div img {
+        width: 80px;
+        /* border: 1px solid #000; */
+    }
+
+    .placement div p {
+        width: 60%;
+
+        width: 80px;
+        font-size: 16px;
+        /* border: 1px solid #000; */
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        text-align: center;
+        padding: 5px 0px;
+
+    }
+
+
 }
