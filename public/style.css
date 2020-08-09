@@ -1,0 +1,1820 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400,900;1,500&display=swap");
+
+/*
+@media screen and (max-width: 840px) {
+
+
+  .serviceSection {
+    display: block;
+  }
+
+  .growthSection {
+    display: none;
+  }
+
+  .profitSection {
+    display: none;
+  }
+
+  .testimonial {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .serviceSection {
+    display: none;
+  }
+} */
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  /* border: 1px solid; */
+}
+
+.heroSection .headline {
+  position: absolute;
+  width: 454px;
+  height: 140px;
+  left: 100px;
+  top: 100px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+
+  color: #353535;
+}
+
+.heroSection .headline2 {
+  position: absolute;
+  width: 396px;
+  height: 41px;
+  left: 100px;
+  top: 260px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 41px;
+  color: #353535;
+}
+
+.heroSection p {
+  position: absolute;
+  width: 574px;
+  height: 143px;
+  left: 100px;
+  top: 320px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #353535;
+}
+
+.heroSection .svgImg {
+  position: absolute;
+  width: 35em;
+  height: 25em;
+  right: 100px;
+  top: 80px;
+  /* border: 1px solid #000; */
+}
+
+/* .heroSection .inputEmail {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  left: 100px;
+  top: 509px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+} */
+
+.heroSection .emailHero {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  left: 100px;
+  top: 509px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border-radius: 66px;
+  padding: 15px 20px;
+  border: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.heroSection .emailHero:focus {
+  background-color: #f5f5f5;
+  transition: 0.5s ease-in-out;
+  border-bottom: 2px solid #48fa9a;
+}
+
+.heroSection .contText,
+.contEmail:hover {
+  background-color: #f8f7f7;
+  transition: 0.5s ease-in-out;
+}
+
+.heroSection .submitBtn {
+  border: none;
+  position: absolute;
+  left: 430px;
+  top: 570px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  background-color: #48fa9a;
+  outline: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.heroSection .submitBtn:hover {
+  background-color: #3ad884;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1280px) {
+  .heroSection .svgImg {
+    transform: scale(0.7);
+    position: absolute;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .heroSection .svgImg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .heroSection .headline {
+    position: relative;
+  }
+
+  .heroSection .svgImg {
+    display: none;
+  }
+}
+
+.aboutSection {
+  position: relative;
+  width: 100%;
+  height: 760px;
+  /* border: 1px solid #000; */
+}
+
+.aboutSection .aboutWatermark {
+  position: absolute;
+  width: 822px;
+  height: 234px;
+  left: 100px;
+  top: 0px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 234px;
+  text-align: right;
+  color: rgba(53, 53, 53, 0.04);
+}
+
+.aboutSection p {
+  position: relative;
+  top: 150px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
+.aboutSection .rect3 {
+  position: absolute;
+  left: -10px;
+  top: 500px;
+}
+
+.aboutSection .rect4 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: -20px;
+  top: 0px;
+}
+
+.aboutSection .ell1 {
+  position: absolute;
+  left: 56px;
+  top: 410px;
+}
+
+.aboutSection .poly {
+  position: absolute;
+  right: -10px;
+  top: 500px;
+}
+
+.aboutSection .ourTeam {
+  position: relative;
+  top: 150px;
+  width: 100%;
+  height: 200px;
+  /* margin-top: 20px; */
+  text-align: center;
+}
+
+.ourTeam .heading {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #353535;
+}
+
+.ourTeam .content {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.ourTeam .card {
+  position: relative;
+  width: 120px;
+  height: 160px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ourTeam img {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ourTeam img,
+.name,
+.position {
+  position: relative;
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 950px) {
+  .aboutSection .aboutWatermark {
+    position: absolute;
+    width: auto;
+    height: 234px;
+    left: 10px;
+    top: 20px;
+    font-size: 100px;
+  }
+
+  .aboutSection .ell1 {
+    display: none;
+  }
+
+  .aboutSection .poly {
+    display: none;
+  }
+
+  .aboutSection .rect4 {
+    display: none;
+  }
+
+  .aboutSection .rect3 {
+    display: none;
+  }
+
+  .aboutSection p {
+    font-size: 18px;
+    padding: 0px 20px;
+  }
+
+  .aboutSection .ourTeam {
+    display: block;
+    margin-left: 20px;
+    text-align: center;
+    /* border: 1px solid #000; */
+  }
+
+  .ourTeam .heading {
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid #000; */
+  }
+
+  .ourTeam .card {
+    position: relative;
+    width: 160px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .ourTeam .name,
+  .position {
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+/**************** media query for android 360 X 640 (min:320 max:390) ******************/
+
+@media screen and (max-width: 680px) {
+  .heroSection {
+    width: 100%;
+    height: 450px;
+    margin-top: 20px;
+  }
+
+  .heroSection .headline {
+    position: absolute;
+    width: 303px;
+    height: 94px;
+    left: 30px;
+    top: 50px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 47px;
+  }
+
+  .heroSection .headline2 {
+    position: absolute;
+    width: 283px;
+    height: 29px;
+    left: 30px;
+    top: 160px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .heroSection p {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left: 30px;
+    top: 200px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #353535;
+  }
+
+  .heroSection .emailHero {
+    position: absolute;
+    width: 240px;
+    height: 10px;
+    left: 30px;
+    top: 380px;
+  }
+
+  .heroSection .submitBtn {
+    position: absolute;
+    left: 30px;
+    top: 440px;
+    text-align: center;
+    padding: 8px 16px;
+  }
+
+  .aboutSection .aboutWatermark {
+    position: absolute;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+    /* border: 1px solid; */
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 90px;
+    color: rgba(53, 53, 53, 0.096);
+  }
+
+  .ourTeam .heading {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .ourTeam .content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid #000; */
+  }
+
+  .ourTeam .card {
+    position: relative;
+    width: 120px;
+    height: 160px;
+  }
+
+  .ourTeam img,
+  .name,
+  .position {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*************** Service Section *************************/
+.serviceSection {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  /* border: 1px solid #000; */
+  padding-top: 20px;
+}
+
+.serviceSection .heading {
+  width: 100%;
+  height: 59px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #353535;
+}
+
+.serviceSection .serviceWatermark {
+  position: absolute;
+  width: 766px;
+  height: 234px;
+  right: 100px;
+  top: 10rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 234px;
+  text-align: right;
+  color: rgba(53, 53, 53, 0.04);
+}
+
+.serviceSection img {
+  position: absolute;
+  left: 100px;
+  top: 10em;
+}
+
+.serviceSection .content {
+  position: absolute;
+  width: 747px;
+  height: 210px;
+  right: 4em;
+  top: 16rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: right;
+  color: #000000;
+}
+
+.serviceSection b {
+  font-weight: 500;
+}
+
+.growthSection {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  /* border: 1px solid #000; */
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.growthSection .growthWatermark {
+  position: absolute;
+  width: 644px;
+  height: 234px;
+  left: 100px;
+  top: 5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 234px;
+
+  color: rgba(53, 53, 53, 0.04);
+}
+
+.growthSection .content {
+  position: absolute;
+  width: 728px;
+  height: 280px;
+  left: 100px;
+  top: 12rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.growthSection b {
+  font-weight: 500;
+}
+
+.growthSection img {
+  position: absolute;
+  width: 657px;
+  height: 500px;
+  right: 50px;
+  top: 0em;
+  /* border: 1px solid #000; */
+}
+
+.profitSection {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  /* border: 1px solid #000; */
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.profitSection .profitWatermark {
+  position: absolute;
+  width: 766px;
+  height: 234px;
+  right: 100px;
+  top: 5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 234px;
+  text-align: right;
+  color: rgba(53, 53, 53, 0.04);
+}
+
+.profitSection .content {
+  position: absolute;
+  width: 720px;
+  /* border: 1px solid #000; */
+  height: 280px;
+  right: 100px;
+  top: 12rem;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.profitSection img {
+  margin-left: 100px;
+  margin-top: 2rem;
+}
+
+.profitSection b {
+  font-weight: 500;
+}
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  height: 795px;
+  left: 0px;
+  /* border: 1px solid #000; */
+  background-image: url("./assets/images/bg/Backdrop.svg");
+  background-repeat: no-repeat;
+  /* background-size: 160% 100%; */
+}
+
+.testimonial .watermark {
+  position: relative;
+  width: 100%;
+  height: 234px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200px;
+  line-height: 234px;
+  text-align: left;
+  padding-left: 100px;
+  color: rgba(53, 53, 53, 0.05);
+}
+
+.testimonial .headline {
+  position: absolute;
+  width: 393px;
+  height: 352px;
+  font-family: "Roboto", sans-serif;
+  left: 100px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 88px;
+  color: #353535;
+}
+
+.testimonial .review {
+  display: none;
+}
+
+.testimonial .tcard {
+  position: absolute;
+  width: 579px;
+  height: 353px;
+  right: 100px;
+  background: #f8f8f8;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1),
+    -5px -10px 15px rgba(255, 255, 255, 0.86);
+  border-radius: 25px;
+}
+
+.tcard .header {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin-top: 20px;
+  margin-bottom: 2em;
+  /* border: 3px solid #000; */
+}
+
+.tcard .avatar {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -15px;
+  left: 0em;
+  /* background: #C4C4C4; */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); */
+  border-radius: 100px;
+  padding: 10px;
+}
+
+.tcard .name {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2em;
+  text-align: left;
+  padding-left: 5em;
+  height: 23px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  /* border: 1px solid #000; */
+  color: #333355;
+}
+
+.tcard .content {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid #000; */
+}
+
+.content .quoteOpen {
+  position: absolute;
+  left: 2em;
+  top: 6em;
+  margin: 0;
+}
+
+.content .quoteClose {
+  position: absolute;
+  left: 22em;
+  top: 17em;
+  margin: 0;
+}
+
+.tcard .post {
+  position: relative;
+  width: 400px;
+  height: 184px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 5em;
+  color: #353535;
+}
+
+/********* FROM SERVICE SECTION TO TESTIMONIAL FOR MOBILE******************/
+
+@media screen and (max-width: 680px) {
+  .serviceSection {
+    clear: both;
+    margin-top: 500px;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid #000; */
+    padding-top: 20px;
+  }
+
+  .serviceSection .heading {
+    width: 100%;
+    height: 59px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 59px;
+    text-align: center;
+    color: #353535;
+  }
+
+  .serviceSection .serviceWatermark {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0px;
+    left: 0;
+    top: 14rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .serviceSection img {
+    position: absolute;
+    top: 10em;
+    width: 200px;
+    /* border: 1px solid #000; */
+    left: 20%;
+    top: 80px;
+  }
+
+  .serviceSection .content {
+    position: absolute;
+    width: 320px;
+    height: 210px;
+    right: 0em;
+    left: 20px;
+    top: 20rem;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .serviceSection b {
+    font-weight: 500;
+  }
+
+  .growthSection {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 660px;
+    margin-top: 20px;
+    /* border: 1px solid #000; */
+    padding-top: 0px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .growthSection .growthWatermark {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0px;
+    left: 0;
+    top: 10rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .growthSection .content {
+    position: absolute;
+    width: 320px;
+    height: 280px;
+    left: 20px;
+    top: 16rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    color: #000000;
+  }
+
+  .growthSection b {
+    font-weight: 500;
+  }
+
+  .growthSection img {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    /* border: 1px solid #000; */
+    left: 12%;
+    top: 0px;
+  }
+
+  .profitSection {
+    position: relative;
+    width: 100%;
+    height: 640px;
+    /* border: 1px solid #000; */
+    margin-top: 20px;
+    /* padding-top: 20px; */
+    font-family: "Roboto", sans-serif;
+    /* display: non e; */
+  }
+
+  .profitSection .profitWatermark {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0px;
+    left: 0;
+    top: 10rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .profitSection .content {
+    position: absolute;
+    width: 320px;
+    height: 350px;
+    left: 20px;
+    top: 16rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    color: #000000;
+  }
+
+  .profitSection img {
+    margin: 0;
+    position: absolute;
+    width: 260px;
+    height: auto;
+    /* border: 1px solid #000; */
+    left: 24%;
+    top: 20px;
+  }
+
+  .profitSection b {
+    font-weight: 500;
+  }
+
+  .testimonial {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    /* border: 1px solid #000; */
+    margin-top: 40px;
+    padding-top: 2px;
+    font-family: "Roboto", sans-serif;
+    background-image: none;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    /* background-size: 160% 100%; */
+  }
+
+  .testimonial .watermark {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    right: 80px;
+    bottom: 90px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .testimonial .headline {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 23%;
+    top: 45px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #353535;
+    /* border: 1px solid #000; */
+    /* display: none; */
+  }
+
+  .testimonial .review {
+    width: 320px;
+    left: 5%;
+    display: block;
+    position: absolute;
+    top: 6em;
+  }
+
+  .testimonial .tcard {
+    display: none;
+  }
+
+  .tcard .header {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 2em;
+    /* border: 3px solid #000; */
+  }
+
+  .tcard .avatar {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -15px;
+    left: 0em;
+    /* background: #C4C4C4; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12); */
+    border-radius: 100px;
+    padding: 10px;
+  }
+
+  .tcard .name {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2em;
+    text-align: left;
+    padding-left: 5em;
+    height: 23px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    /* border: 1px solid #000; */
+    color: #333355;
+  }
+
+  .tcard .content {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+  }
+
+  .content .quoteOpen {
+    position: absolute;
+    left: 2em;
+    top: 6em;
+    margin: 0;
+  }
+
+  .content .quoteClose {
+    position: absolute;
+    left: 22em;
+    top: 17em;
+    margin: 0;
+  }
+
+  .tcard .post {
+    position: relative;
+    width: 400px;
+    height: 184px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    padding-left: 5em;
+    color: #353535;
+  }
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 1006px;
+  background-image: url("./assets/images/bg/GreenStage.svg");
+  background-repeat: no-repeat;
+}
+
+.contact .watermark {
+  position: absolute;
+  width: 100%;
+  height: 234px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 180px;
+  line-height: 234px;
+  text-align: right;
+  right: 100px;
+  color: rgba(53, 53, 53, 0.05);
+}
+
+.contact .text {
+  position: absolute;
+  width: 483px;
+  height: 419px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 50px;
+  line-height: 60px;
+  top: 70px;
+  left: 100px;
+  color: #353535;
+}
+
+.contact .contactCard {
+  position: absolute;
+  width: 530px;
+  right: 100px;
+  height: 750px;
+  top: 150px;
+  background: #f8f8f8;
+  box-shadow: 5px 5px 17px rgba(0, 0, 0, 0.15),
+    -5px -5px 12px rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  /* border: 1px solid #000; */
+}
+
+.contactCard .heading {
+  width: 100%;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 41px;
+  font-weight: bold;
+  /* border: 1px solid #000; */
+  padding: 30px 0px 0px 30px;
+  color: #353535;
+}
+
+.contactCard p {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid #000; */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 0px 0px 0px 30px;
+  color: #353535;
+  margin: 0;
+}
+
+.contactCard .input {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+
+  /* border: 1px solid #000; */
+}
+
+.contactCard .input p {
+  padding: 10px 20px;
+  margin-left: 40px;
+  width: 100px;
+  font-size: 18px;
+  /* border: 1px solid #000; */
+}
+
+.contactCard span {
+  color: red;
+}
+
+.contactCard .contText,
+.contEmail {
+  width: 75%;
+  height: auto;
+  background: #f8f8f8;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.05),
+    -5px -10px 15px rgba(255, 255, 255, 0.86);
+  border-radius: 45px;
+  outline: none;
+  border: none;
+  margin-left: 30px;
+  padding: 20px 30px;
+}
+
+.contact .contText::-webkit-input-placeholder,
+.contEmail::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+
+.contactCard textarea {
+  width: 75%;
+  height: 150px;
+  outline: none;
+  border: none;
+  margin-left: 30px;
+  padding: 20px 30px;
+  font-family: "Roboto", sans-serif;
+  background: #f8f8f8;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.05),
+    -5px -10px 15px rgba(255, 255, 255, 0.86);
+  border-radius: 14px;
+  resize: none;
+}
+
+.contactCard .contText:focus,
+.contEmail:focus,
+textarea:focus {
+  box-shadow: inset 5px 10px 15px rgba(0, 0, 0, 0.05),
+    inset -5px -10px 15px rgba(255, 255, 255, 0.86);
+}
+
+.contactCard .sendBtn {
+  /* border: 1px solid #000; */
+  width: 135px;
+  text-align: center;
+  padding: 20px 10px;
+  background: #a3ffcd;
+  border-radius: 32px;
+  margin: 40px 0px 0px 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  color: #353535;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(128, 127, 127, 0.2);
+}
+
+.contactCard .sendBtn:hover {
+  background-color: #40e68d;
+  transition: 0.5s ease-in-out;
+}
+
+.contact .otherContact {
+  position: absolute;
+  width: 500px;
+  height: 260px;
+  bottom: 100px;
+  left: 100px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.contact .heading {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.contact .otherContact p {
+  color: #353535;
+  padding: 0px 0px 0px 15px;
+  margin: 0px;
+  /* border: 1px solid #000; */
+}
+
+.contact .otherContact .iconify {
+  color: #6aaf89;
+  font-size: 32px;
+  /* border: 1px solid #000; */
+}
+
+.otherContact .texts {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 10px 10px;
+  margin-left: 0px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 23px;
+  color: #000000;
+}
+
+/********* contact FOR MOBILE******************/
+
+@media screen and (max-width: 680px) {
+  .contact {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    padding-top: 40px;
+    background-image: none;
+    /* border: 1px solid #000; */
+  }
+
+  .contact .watermark {
+    width: 100%;
+    height: auto;
+    font-size: 60px;
+    line-height: 0px;
+    text-align: center;
+    right: 0px;
+  }
+
+  .contact .text {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    /* border: 1px solid #000; */
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+    top: 30px;
+    left: 0px;
+    text-align: center;
+  }
+
+  .contact .contactCard {
+    position: absolute;
+    width: 90%;
+    right: 20px;
+    height: 700px;
+    top: 240px;
+    background: #f8f8f8;
+    box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.15),
+      -5px -5px 12px rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    /* border: 1px solid #000; */
+  }
+
+  .contactCard .heading {
+    width: 100%;
+    height: 45px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 41px;
+    font-weight: bold;
+    /* border: 1px solid #000; */
+    padding: 30px 0px 0px 30px;
+    color: #353535;
+  }
+
+  .contactCard p {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000; */
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 0px 0px 0px 30px;
+    color: #353535;
+    margin: 0;
+  }
+
+  .contactCard .input {
+    position: relative;
+    width: 85%;
+    height: auto;
+    margin: 20px 0px;
+
+    /* border: 1px solid #000; */
+  }
+
+  .contactCard .input p {
+    padding: 5px 20px;
+    margin-left: 40px;
+    width: 100px;
+    font-size: 16px;
+    /* border: 1px solid #000; */
+  }
+
+  .contactCard .sendBtn {
+    /* border: 1px solid #000; */
+    width: 120px;
+    text-align: center;
+    padding: 20px 10px;
+    background: #a3ffcd;
+    border-radius: 32px;
+    margin: 40px 0px 0px 30px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 10px;
+    color: #353535;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(128, 127, 127, 0.2);
+  }
+
+  .contact .otherContact {
+    width: 100%;
+    height: 260px;
+    bottom: 100px;
+    top: 50em;
+    left: 20px;
+    font-size: 20px;
+  }
+
+  .contact .heading {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .contact .otherContact .iconify {
+    font-size: 24px;
+  }
+
+  .otherContact .texts {
+    font-size: 18px;
+  }
+}
+
+/************************************************/
+footer {
+  width: 100%;
+  height: auto;
+  background: #e3fff0;
+}
+
+footer .hero {
+  width: 239px;
+  height: 212.51px;
+  margin: 25px 10px 10px 100px;
+  padding-top: 10px;
+  float: left;
+}
+
+footer .hero .logo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 41px;
+  color: #353535;
+}
+
+footer .hero p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #353535;
+}
+
+footer .product,
+.legals {
+  width: 200px;
+  margin: 25px 10px 10px 100px;
+  float: left;
+}
+
+footer .location {
+  width: 400px;
+  margin: 25px 10px 10px 100px;
+  /* border: 1px solid #000; */
+  float: left;
+}
+
+footer h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 510;
+  font-size: 22px;
+  line-height: 23px;
+  /* identical to box height */
+}
+
+footer li {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #353535;
+}
+
+footer li:hover {
+  color: #0d6637;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0d6637;
+  font-weight: 400;
+}
+
+.location .map {
+  background-image: url("./assets/images/map.svg");
+  width: 233px;
+  height: 227px;
+  background-repeat: no-repeat;
+}
+
+footer .copyright1 {
+  /* position: absolute; */
+  margin: 25px 0px 0px 100px;
+  clear: both;
+  width: 85%;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 1px solid rgba(53, 53, 53, 0.2);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17.8246px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #353535;
+}
+
+/********* footer FOR MOBILE******************/
+
+@media screen and (max-width: 680px) {
+  footer {
+    width: 100%;
+    height: auto;
+    background: #e3fff0;
+    display: block;
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  footer .hero {
+    width: 239px;
+    height: auto;
+    margin: 20px 10px 10px 20px;
+    padding-top: 10px;
+    float: left;
+    /* border: 1px solid #000; */
+  }
+
+  footer .product,
+  .legals {
+    width: 70%;
+    float: left;
+    /* border: 1px solid #000; */
+    padding: 0px 0px;
+    margin: 0px 20px 20px 20px;
+  }
+
+  footer .location {
+    width: 50%;
+    padding: 0px 0px;
+    margin: 10px 20px;
+    /* border: 1px solid #000; */
+    float: left;
+  }
+
+  footer h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 510;
+    font-size: 22px;
+    line-height: 0px;
+    /* identical to box height */
+  }
+
+  footer ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  footer li {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0px 10px;
+    margin: 0;
+    /* border: 1px soli  d #000; */
+  }
+
+  .location .map {
+    background-image: url("./assets/images/map.svg");
+    width: 233px;
+    height: 227px;
+    background-repeat: no-repeat;
+  }
+
+  footer .copyright1 {
+    /* position: absolute; */
+    margin: 0px 0px 30px 0px;
+    width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+    border-top: 1px solid rgba(53, 53, 53, 0.2);
+
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #353535;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 5;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Roboto", sans-serif;
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  position: relative;
+  /* 15% from the top and centered */
+  padding: 50px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 20px;
+  /* Could be more or less, depending on screen size */
+}
+
+.modal .modalEmail {
+  width: 60%;
+  height: auto;
+  left: 100px;
+  top: 509px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border-radius: 66px;
+  padding: 15px 20px;
+  border: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+  /* border: 1px solid #000; */
+  margin-top: 0;
+}
+
+.modal p {
+  margin: 0px 0px 5px 20px;
+  font-weight: 700;
+  /* border: 1px solid #000; */
+
+}
+
+.modal button {
+  border: none;
+  /* position: absolute; */
+  /* left: 430px; */
+  /* top: 570px; */
+  width: auto;
+  /* margin-top: 20px; */
+  margin-left: 20px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  background-color: #48fa9a;
+  outline: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 48px;
+  font-weight: bold;
+  /* border: 1px solid #000; */
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.regModal {
+  display: block;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 5;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  font-family: "Roboto", sans-serif;
+
+}
+
+/* Modal Content/Box */
+.regModal-content {
+  background-color: #fefefe;
+  margin: 2% auto;
+  position: relative;
+  /* 15% from the top and centered */
+  padding: 50px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 30px;
+  /* Could be more or less, depending on screen size */
+}
+
+.regModal .modalEmail {
+  width: 60%;
+  height: auto;
+  left: 100px;
+  top: 509px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border-radius: 66px;
+  padding: 15px 20px;
+  border: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.regModal .modalAddress {
+  width: 60%;
+  height: 100px;
+  left: 100px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 20px;
+  border: none;
+  resize: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.regModal p {
+  margin: 20px 0px 5px 20px;
+  font-weight: 700;
+}
+
+.regModal .regModalSubmitBtn {
+  border: none;
+  width: auto;
+  margin: 80px 20px 0px 0px;
+  /* border: 1px solid #000; */
+  /* margin-top: 20px; */
+  float: right;
+  margin-left: 20px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  background-color: #48fa9a;
+  outline: none;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.regclose {
+  color: #aaa;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.regclose:hover,
+.regclose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.error {
+  color: red;
+}
